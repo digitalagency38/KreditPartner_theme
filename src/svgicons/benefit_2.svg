@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 120 120" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
+    <rect id="Benefits_2" x="0" y="0" width="120" height="120" style="fill:none;"/>
+    <g>
+        <rect x="0" y="0" width="120" height="120" style="fill:none;"/>
+        <path d="M18.835,46.096C18.835,40.974 22.994,36.815 28.116,36.815L65.15,36.815C70.273,36.815 74.431,40.974 74.431,46.096L74.431,78.633C74.431,83.756 70.273,87.914 65.15,87.914L50.33,87.914C50.233,87.914 50.138,87.942 50.056,87.994C48.66,88.888 36.001,96.991 34.16,98.17C34.115,98.198 34.059,98.2 34.012,98.175C33.966,98.149 33.937,98.1 33.938,98.048C33.943,96.58 33.969,89.464 33.974,88.13C33.974,88.073 33.952,88.018 33.912,87.978C33.871,87.937 33.816,87.914 33.759,87.914C32.702,87.914 28.116,87.914 28.116,87.914C22.994,87.914 18.835,83.756 18.835,78.633L18.835,46.096Z" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;transform-box: fill-box; transform-origin: 50% 50%;">
+            <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="translate" dur="4s" values="0 3; 0 -3; 0 3" begin="0" repeatCount="indefinite"/></path>
+        <path d="M9.638,82.877C9.709,82.712 9.868,82.606 10.043,82.606C10.219,82.606 10.378,82.712 10.448,82.877L11.774,85.977C11.807,86.053 11.854,86.123 11.912,86.183C11.97,86.242 12.038,86.29 12.113,86.323L15.139,87.682C15.3,87.754 15.404,87.917 15.404,88.097C15.404,88.277 15.3,88.439 15.139,88.512L12.113,89.87C12.038,89.904 11.97,89.952 11.912,90.011C11.854,90.07 11.807,90.14 11.774,90.217L10.448,93.317C10.378,93.482 10.219,93.588 10.043,93.588C9.868,93.588 9.709,93.482 9.638,93.317L8.312,90.217C8.279,90.14 8.232,90.07 8.174,90.011C8.117,89.952 8.048,89.904 7.973,89.87L4.947,88.512C4.786,88.439 4.683,88.277 4.683,88.097C4.683,87.917 4.786,87.754 4.947,87.682L7.973,86.323C8.048,86.29 8.117,86.242 8.174,86.183C8.232,86.123 8.279,86.053 8.312,85.977L9.638,82.877Z" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;stroke-miterlimit:1.5;transform-box: fill-box; transform-origin: 50% 50%;">
+        <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="rotate" dur="3s" values="0; 90; 90; 180; 180; 270; 270; 360; 360;" begin="0" repeatCount="indefinite"/>
+        
+    </path>
+        <path d="M101.113,37.232C101.113,32.11 96.955,27.951 91.832,27.951L40.757,27.951C35.635,27.951 31.476,32.11 31.476,37.232L31.476,69.769C31.476,74.892 35.635,79.05 40.757,79.05L70.426,79.05C70.523,79.05 70.617,79.078 70.699,79.13C72.095,80.024 84.755,88.127 86.596,89.306C86.64,89.334 86.697,89.336 86.743,89.311C86.789,89.285 86.818,89.236 86.818,89.184C86.812,87.716 86.786,80.6 86.781,79.266C86.781,79.209 86.804,79.154 86.844,79.114C86.884,79.073 86.939,79.05 86.996,79.05C87.961,79.05 91.832,79.05 91.832,79.05C96.955,79.05 101.113,74.892 101.113,69.769L101.113,37.232Z" style="fill:rgb(222,223,254);stroke:rgb(97,113,255);stroke-width:1.6px;transform-box: fill-box; transform-origin: 50% 50%;">
+            <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="translate" dur="3s" values="0 -3; 0 3; 0 -3" begin="0" repeatCount="indefinite"/></path>
+        <circle cx="50.215" cy="53.775" r="4.445" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;stroke-linejoin:miter;transform-box: fill-box; transform-origin: 50% 50%;">
+            <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="translate" dur="2s" values="0 3; 0 -3; 0 3" begin="0" repeatCount="indefinite"/></circle>
+        <circle cx="66.295" cy="53.775" r="4.445" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;stroke-linejoin:miter; transform-origin: 50% 50%;">
+            <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="translate" dur="2s" values="0 3; 0 -3; 0 3" begin="0.3s" repeatCount="indefinite"/></circle>
+        <circle cx="82.374" cy="53.775" r="4.445" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;stroke-linejoin:miter; transform-origin: 50% 50%;">
+            <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="translate" dur="2s" values="0 3; 0 -3; 0 3" begin="0.6s" repeatCount="indefinite"/></circle>
+            <g style="transform-box: fill-box; transform-origin: 50% 50%;">
+                <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="rotate" dur="10s" values="0; 0; -90; -90; -90; -90; -180; -180; -180; -180; -270; -270; -270; -270; -360; -360; -360; -360;" begin="0" repeatCount="indefinite"/>
+                
+            
+                <path d="M105.323,36.815L116.985,36.815" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;stroke-linejoin:miter;"/>
+                <path d="M105.323,44.425L112.752,44.425" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;stroke-linejoin:miter;"/>
+            </g>
+    </g>
+</svg>

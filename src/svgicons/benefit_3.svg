@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 120 120" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
+    <rect id="Benefits_3" x="0" y="0" width="120" height="120" style="fill:none;"/>
+    <g>
+        <circle cx="60" cy="80.677" r="36.134" style="fill:rgb(222,223,254);transform-box: fill-box; transform-origin: 50% 50%;">
+            <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="scale" dur="3s" values="1; 0.8; 1" begin="0" repeatCount="indefinite"/>
+        </circle>
+        <g style="transform-box: fill-box; transform-origin: 50% 50%;">
+            <g style="transform-box: fill-box; transform-origin: 50% 50%;">
+                <circle cx="100.55" cy="52.751" r="1.928" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <path d="M101.271,73.582L76.921,88.289L76.92,88.287C76.926,88.496 76.899,88.664 76.835,88.787C73.398,95.374 68.084,101.599 60.05,101.409C56.613,104.685 45.231,97.39 40.851,92.149C38.972,89.9 38.609,87.744 39.102,85.934C39.033,85.775 38.967,85.617 38.902,85.46C37.016,80.878 18.729,73.306 18.729,73.306L26.304,54.173L54.683,60.007L54.801,60.113C56.943,56.453 60.673,54.368 68.497,54.426C73.69,54.464 76.338,56.039 83.108,55.794C85.753,55.699 88.602,54.639 90.438,53.818L92.4,52.849L101.271,73.582Z" style="fill:rgb(238,239,255);"/>
+                <path d="M26.842,53.74L55.22,59.574" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <path d="M65.148,68.445C70.161,73.033 78.387,86.409 77.373,88.353C73.843,95.118 68.334,101.5 59.933,100.946C47.897,100.152 42.015,91.282 39.44,85.027C37.554,80.444 19.266,72.872 19.266,72.872" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <path d="M92.938,52.416C92.938,52.416 88.013,55.203 83.646,55.361C76.876,55.605 74.227,54.03 69.034,53.992C53.273,53.877 54.127,62.455 51.1,75.096C54.229,77.887 60.151,76.087 65.2,68.453" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <path d="M77.458,87.855C77.458,87.855 92.021,78.821 101.809,73.148" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <path d="M60.887,100.635C60.887,100.635 65.646,96.773 60.872,91.816C56.098,86.858 50.218,78.717 44.158,80.851C40.573,82.113 37.182,86.681 41.389,91.715C45.906,97.12 57.872,104.711 60.887,100.635" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <path d="M7.042,73.148L13.858,76.128C15.365,76.787 17.123,76.098 17.782,74.591L27.572,52.195C28.231,50.689 27.543,48.931 26.036,48.272L10.989,42.642" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <path d="M113.85,73.148L107.033,76.128C105.527,76.787 103.768,76.098 103.11,74.591L93.319,52.195C92.66,50.689 93.349,48.931 94.855,48.272L107.735,42.642" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+                <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="skewY" dur="3s" begin="0" values="0; 3; -3; 0;" repeatCount="indefinite"/>
+            </g>
+            <animateTransform xmlns="http://www.w3.org/2000/svg" attributeType="xml" attributeName="transform" type="translate" dur="3s" values="0 0; 0 -3; 0 3; 0 0" begin="0" repeatCount="indefinite"/>
+        </g>
+        <path d="M34.512,32.065C34.475,31.908 34.533,31.745 34.661,31.651C34.788,31.556 34.961,31.548 35.101,31.63L37.732,33.171C37.797,33.209 37.869,33.235 37.943,33.247C38.017,33.259 38.092,33.257 38.165,33.241L41.095,32.602C41.251,32.568 41.414,32.631 41.511,32.762C41.607,32.892 41.619,33.066 41.541,33.205L40.071,35.82C40.035,35.885 40.011,35.956 40.001,36.031C39.99,36.105 39.994,36.181 40.012,36.254L40.713,39.221C40.751,39.379 40.692,39.542 40.565,39.636C40.437,39.73 40.265,39.738 40.125,39.657L37.494,38.116C37.429,38.078 37.357,38.052 37.283,38.04C37.209,38.028 37.134,38.03 37.061,38.046L34.13,38.685C33.975,38.718 33.812,38.656 33.715,38.525C33.618,38.395 33.606,38.22 33.685,38.081L35.154,35.467C35.191,35.402 35.215,35.33 35.225,35.256C35.235,35.182 35.232,35.106 35.214,35.032L34.512,32.065Z" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;stroke-miterlimit:1.5;">
+            <animate attributeName="stroke-opacity" dur="4.5s" values="1; 1; 1; 1; 0; 0; 0; 0; 0; 1; 1; 1; 1; 1;" begin="0" repeatCount="indefinite"/>
+        </path>
+        <path d="M85.6,24.902C85.694,24.794 85.841,24.753 85.974,24.796C86.107,24.84 86.201,24.96 86.214,25.102L86.453,27.782C86.458,27.849 86.477,27.913 86.506,27.972C86.535,28.032 86.575,28.085 86.624,28.129L88.583,29.909C88.687,30.003 88.725,30.153 88.681,30.289C88.636,30.425 88.517,30.523 88.377,30.538L85.745,30.82C85.68,30.827 85.617,30.846 85.558,30.877C85.499,30.907 85.447,30.949 85.403,30.999L83.629,33.022C83.535,33.129 83.388,33.171 83.255,33.127C83.122,33.084 83.028,32.964 83.015,32.822L82.776,30.142C82.77,30.075 82.752,30.011 82.723,29.951C82.694,29.892 82.654,29.839 82.605,29.795L80.646,28.015C80.542,27.92 80.503,27.771 80.548,27.635C80.592,27.498 80.711,27.401 80.851,27.386L83.483,27.104C83.548,27.097 83.612,27.078 83.671,27.047C83.729,27.017 83.782,26.975 83.826,26.925L85.6,24.902Z" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;stroke-miterlimit:1.5;">
+            <animate attributeName="stroke-opacity" dur="8.5s" values="1; 1; 1; 1; 0; 0; 0; 0; 0; 1; 1; 1; 1; 1;" begin="0" repeatCount="indefinite"/>
+        </path>
+        <circle cx="52.951" cy="18.651" r="2.899" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;">
+            <animate attributeName="stroke-opacity" dur="5.5s" values="1; 1; 1; 1; 0; 0; 0; 0; 0; 1; 1; 1; 1; 1;" begin="0" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="65.884" cy="39.713" r="1.928" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;">
+            <animate attributeName="stroke-opacity" dur="7.5s" values="1; 1; 1; 1; 0; 0; 0; 0; 0; 1; 1; 1; 1; 1;" begin="0" repeatCount="indefinite"/>
+        </circle>
+        
+    </g>
+</svg>

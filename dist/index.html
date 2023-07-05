@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css?_v=20230705234708">
+</head>
+<body>
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        <header class="header"></header>
+        <main>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, soluta.</span>
+            <button data-modal-id="1">Modal1 Opener</button>
+            <button data-modal-id="2">Modal2 Opener</button>
+            <img src="img/icons/icons.svg#benefit_1" alt="benefit_1"/>
+            <picture><source srcset="img/download.webp" type="image/webp"><img src="img/download.png" width="100" alt=""></picture>
+            {{ isMounted }}
+        </main>
+        <footer class="footer"></footer>
+        <div class="modal" data-modal="1">
+    <div class="modal__in">
+        <div class="modal__closer"></div>
+        modal 1
+    </div>
+</div>
+
+<div class="modal" data-modal="2">
+    <div class="modal__in">
+        <div class="modal__closer"></div>
+        modal 2
+    </div>
+</div>
+    </div>
+    <script src="js/app.min.js?_v=20230705234708"></script>
+</body>
+</html>

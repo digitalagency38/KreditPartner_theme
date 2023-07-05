@@ -1,0 +1,86 @@
+<svg width="100%" height="100%" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
+    <rect id="Benefits_4" x="0" y="0" width="120" height="120" style="fill:none;"/>
+    <g>
+        <rect x="0" y="0" width="120" height="120" style="fill:none;"/>
+        <path d="M111.184,25.637C111.184,23.135 109.153,21.104 106.652,21.104L12.475,21.104C9.973,21.104 7.943,23.135 7.943,25.637L7.943,75.947C7.943,78.448 9.973,80.479 12.475,80.479L106.652,80.479C109.153,80.479 111.184,78.448 111.184,75.947L111.184,25.637Z" style="fill:rgb(222,223,254);stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+        <path d="M5.723,87.074C5.726,86.817 5.879,86.588 6.112,86.491C6.345,86.395 6.615,86.449 6.799,86.629L10.267,90.017C10.353,90.101 10.453,90.168 10.563,90.215C10.672,90.262 10.789,90.288 10.907,90.292L15.675,90.432C15.929,90.439 16.156,90.598 16.255,90.837C16.354,91.076 16.305,91.349 16.132,91.533L12.859,95.004C12.778,95.09 12.713,95.191 12.669,95.301C12.625,95.412 12.601,95.531 12.6,95.651L12.543,100.499C12.54,100.756 12.388,100.985 12.155,101.082C11.921,101.178 11.652,101.124 11.468,100.944L8,97.556C7.914,97.472 7.814,97.405 7.704,97.358C7.594,97.311 7.477,97.285 7.359,97.282L2.591,97.141C2.338,97.134 2.11,96.975 2.012,96.736C1.913,96.497 1.961,96.224 2.135,96.04L5.408,92.569C5.489,92.483 5.553,92.382 5.597,92.272C5.642,92.161 5.665,92.043 5.667,91.922L5.723,87.074Z" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.6px;stroke-miterlimit:1.5;transform-box: fill-box; transform-origin: 50% 50%;">
+            <animateTransform
+                attributeType="xml"
+                attributeName="transform"
+                type="rotate"
+                begin="0s"
+                dur="1s"
+                values="0; 360;"
+                repeatCount="indefinite"
+            />
+        </path>
+        <g style="transform-box: fill-box; transform-origin: 80% 20%;">
+            <animateTransform
+                attributeType="xml"
+                attributeName="transform"
+                type="rotate"
+                begin="0s"
+                dur="4s"
+                values="0; 20; 20; 20; 0;"
+                repeatCount="indefinite"
+            />
+            <path d="M80.378,75.463C80.491,75.393 80.717,75.288 80.705,75.252C80.091,73.408 79.758,71.435 79.758,69.385C79.758,59.123 88.09,50.792 98.351,50.792C108.613,50.792 116.944,59.123 116.944,69.385C116.944,79.646 108.613,87.978 98.351,87.978C93.473,87.978 89.03,86.094 85.712,83.016C85.647,82.956 85.369,83.162 85.206,83.263L70.591,92.532L74.269,98.502C74.541,98.942 74.404,99.521 73.963,99.792L65.685,104.669C65.245,104.941 64.666,104.803 64.395,104.363L56.44,91.453C56.392,91.375 56.357,91.293 56.334,91.209L56.317,91.181C56.113,90.852 56.215,90.42 56.543,90.217L80.378,75.463Z" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+            <circle cx="104.125" cy="65.042" r="5.564" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+        </g>
+        <circle cx="114.153" cy="12.764" r="2.893" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;transform-box: fill-box; transform-origin: 50% 50%;">
+            <animate
+                attributeName="r"
+                begin="0s"
+                dur="2s"
+                values="2.893; 5.893; 2.893;"
+                repeatCount="indefinite"
+            />
+        </circle>
+        <path d="M62.291,35.152L100.071,35.152" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.55px;">
+            <animateTransform
+                attributeType="xml"
+                attributeName="transform"
+                type="translate"
+                begin="0s"
+                dur="1s"
+                values="0 0; 2 0; 0 0;"
+                repeatCount="indefinite"
+            />
+        </path>
+        <path d="M62.291,43.24L88.278,43.24" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.57px;">
+            <animateTransform
+                attributeType="xml"
+                attributeName="transform"
+                type="translate"
+                begin="0.33s"
+                dur="1s"
+                values="0 0; 2 0; 0 0;"
+                repeatCount="indefinite"
+            />
+        </path>
+        <path d="M62.291,52.422L75.562,52.422" style="fill:none;stroke:rgb(97,113,255);stroke-width:1.59px;">
+            <animateTransform
+                attributeType="xml"
+                attributeName="transform"
+                type="translate"
+                begin="0.66s"
+                dur="1s"
+                values="0 0; 2 0; 0 0;"
+                repeatCount="indefinite"
+            />
+        </path>
+        <g style="transform-box: fill-box; transform-origin: 50% 50%;">
+            <animateTransform
+                attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                begin="0s"
+                dur="5s"
+                values="1; 0.8; 1;"
+                repeatCount="indefinite"
+            />
+            <circle cx="33.603" cy="50.792" r="17.164" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.6px;"/>
+            <path d="M23.281,64.293C23.281,58.123 27.906,53.114 33.603,53.114C39.301,53.114 43.926,58.123 43.926,64.293C35.923,69.853 27.737,68.145 23.281,64.293ZM33.603,41.289C36.867,41.289 39.516,43.938 39.516,47.201C39.516,50.465 36.867,53.114 33.603,53.114C30.34,53.114 27.691,50.465 27.691,47.201C27.691,43.938 30.34,41.289 33.603,41.289Z" style="fill:rgb(238,239,255);stroke:rgb(97,113,255);stroke-width:1.64px;"/>
+        </g>
+    </g>
+</svg>
