@@ -521,7 +521,7 @@ textarea {
   font-size: 1.3541666667vw;
   font-style: normal;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 1.5625vw;
   text-decoration: none;
   display: inline-block;
 }
@@ -533,20 +533,20 @@ textarea {
 }
 
 .footer__main-menu > ul > li ul li:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 1.25vw;
 }
 
 .footer__main-menu > ul > li ul li a {
   text-decoration: none;
   color: var(--dop-white, #FFF);
-  font-size: 17px;
+  font-size: 0.8854166667vw;
   font-style: normal;
   font-weight: 400;
   display: inline-block;
 }
 
 .footer__r-side {
-  max-width: 440px;
+  max-width: 22.9166666667vw;
   width: 100%;
 }
 
