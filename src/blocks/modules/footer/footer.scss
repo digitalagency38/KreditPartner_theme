@@ -1,6 +1,122 @@
 .footer {
     &__top {
         background: var(--main-blu, #224875);
+        padding-top: vw(168);
+    }
+    &__blocks {
+        display: flex;
+    }
+    &__l-side {
+        width: calc(100% - vw(440));
+        padding-right: vw(20);
+    }
+    &__main-menu {
+        width: 100%;
+        > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            max-height: vw(625);
+            > li {
+                width: auto;
+                margin-bottom: vw(60);
+                padding-right: vw(20);
+                > a {
+                    color: var(--dop-white, #FFF);
+                    font-size: vw(26);
+                    font-style: normal;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 24px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: var(--dop-white, #FFF);
+                            font-size: 17px;
+                            font-style: normal;
+                            font-weight: 400;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__r-side {
+        max-width: 440px;
+        width: 100%;
+    }
+    &__links {
+        margin-bottom: 60px;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 24px;
+                }
+                a {
+                    color: var(--dop-white, #FFF);
+                    font-size: 17px;
+                    font-style: normal;
+                    text-decoration: none;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &__tit {
+        margin-bottom: 30px;
+        color: var(--dop-white, #FFF);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    &__tel {
+        margin-bottom: 30px;
+        color: var(--dop-white, #FFF);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        a {
+            color: var(--dop-white, #FFF);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0.96px;
+            text-transform: uppercase;
+            display: block;
+            text-decoration: none;
+        }
+        span {
+            color: var(--dop-white, #FFF);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            opacity: .5;
+            display: block;
+            line-height: normal;
+            display: block;
+            letter-spacing: normal;
+            margin-bottom: 10px;
+        }
     }
     &__bottom {
         background: #0E3461;
@@ -48,7 +164,7 @@
         color: var(--dop-white, #FFF);
         font-size: 14px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 120%;
         max-width: 180px;
         width: 100%;
@@ -58,9 +174,24 @@
         color: var(--dop-white, #FFF);
         font-size: 17px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
     }
     &__link {
         font-size: 0;
+    }
+    &__socs {
+        display: flex;
+        a {
+            font-size: 0;
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(255,255,255, .2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:not(:first-child) {
+                margin-left: -1px;
+            }
+        }
     }
 }

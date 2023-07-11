@@ -8,15 +8,22 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
-  font-weight: 900;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
+  font-weight: 900;
 }
 
 @font-face {
@@ -29,8 +36,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 @font-face {
@@ -45,13 +52,6 @@
   font-display: swap;
   src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
   font-weight: 100;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
 }
 
 body {
@@ -484,6 +484,136 @@ textarea {
 
 .footer__top {
   background: var(--main-blu, #224875);
+  padding-top: 8.75vw;
+}
+
+.footer__blocks {
+  display: flex;
+}
+
+.footer__l-side {
+  width: calc(100% - 22.9166666667vw);
+  padding-right: 1.0416666667vw;
+}
+
+.footer__main-menu {
+  width: 100%;
+}
+
+.footer__main-menu > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 32.5520833333vw;
+}
+
+.footer__main-menu > ul > li {
+  width: auto;
+  margin-bottom: 3.125vw;
+  padding-right: 1.0416666667vw;
+}
+
+.footer__main-menu > ul > li > a {
+  color: var(--dop-white, #FFF);
+  font-size: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer__main-menu > ul > li ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__main-menu > ul > li ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer__main-menu > ul > li ul li a {
+  text-decoration: none;
+  color: var(--dop-white, #FFF);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.footer__r-side {
+  max-width: 440px;
+  width: 100%;
+}
+
+.footer__links {
+  margin-bottom: 60px;
+}
+
+.footer__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__links ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer__links ul li a {
+  color: var(--dop-white, #FFF);
+  font-size: 17px;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.footer__tit {
+  margin-bottom: 30px;
+  color: var(--dop-white, #FFF);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.footer__tel {
+  margin-bottom: 30px;
+  color: var(--dop-white, #FFF);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+.footer__tel a {
+  color: var(--dop-white, #FFF);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+}
+
+.footer__tel span {
+  color: var(--dop-white, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.5;
+  display: block;
+  line-height: normal;
+  display: block;
+  letter-spacing: normal;
+  margin-bottom: 10px;
 }
 
 .footer__bottom {
@@ -538,7 +668,7 @@ textarea {
   color: var(--dop-white, #FFF);
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 120%;
   max-width: 180px;
   width: 100%;
@@ -549,11 +679,29 @@ textarea {
   color: var(--dop-white, #FFF);
   font-size: 17px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .footer__link {
   font-size: 0;
+}
+
+.footer__socs {
+  display: flex;
+}
+
+.footer__socs a {
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__socs a:not(:first-child) {
+  margin-left: -1px;
 }
 
 .modal {
