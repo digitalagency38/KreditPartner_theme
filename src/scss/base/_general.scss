@@ -9,6 +9,7 @@ body {
     box-sizing: inherit;
     outline: none;
     scroll-behavior: smooth;
+    transition: all .3s ease;
 }
 html,
 body {
@@ -38,12 +39,15 @@ body {
 }
 
 .center_block {
-    max-width: 1400px;
+    max-width: vw(1440);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    @media all and (max-width: 1023px) {
+        max-width: 1440px;
+    }
 }
 
 img {

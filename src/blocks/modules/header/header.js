@@ -1,12 +1,21 @@
 const Header = class Header {
-    constructor({someVareible}){
-        this.someVareible = someVareible;
+    constructor({isMobileMenuOpened}){
+        this.isMobileMenuOpened = false;
     }
-    someMethod() {
-        console.log(this.someVareible);
+    toogleMobileMenu() {
+        this.isMobileMenuOpened = !this.isMobileMenuOpened;
+    }
+    closeMobileMenu() {
+        this.isMobileMenuOpened = false;
+    }
+    setEventListener() {
+        document.addEventListener('click', (event) => {
+            if (event.target.closest('.header__burger--body') || event.target.closest('.header__burger')) return;
+            this.closeMobileMenu();
+        }) 
     }
     init() {
-        this.someMethod();
+        this.setEventListener();
     }
 }
 

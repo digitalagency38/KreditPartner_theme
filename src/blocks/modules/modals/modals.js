@@ -14,11 +14,16 @@ const Modals = class Modals {
     }
     addClickListener() {
         document.addEventListener('click', (event) => {
-            event.preventDefault();
             if (event.target.dataset.modalId) {
+                event.preventDefault();
                 this.openModal(event.target.dataset.modalId);
             }
             if (!event.target.dataset.modalId && event.target.dataset.modal) {
+                event.preventDefault();
+                this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
+            }
+            if (event.target.closest('.modal__closer')) {
+                event.preventDefault();
                 this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
             }
         })
