@@ -1,8 +1,29 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
+  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
   font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
+  font-weight: 800;
 }
 
 @font-face {
@@ -17,27 +38,6 @@
   font-display: swap;
   src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
   font-weight: 400;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
 }
 
 @font-face {
@@ -507,7 +507,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-height: 32.5520833333vw;
+  max-height: 41.6666666667vw;
 }
 
 .footer__main-menu > ul > li {
@@ -548,10 +548,11 @@ textarea {
 .footer__r-side {
   max-width: 22.9166666667vw;
   width: 100%;
+  margin-bottom: 3.125vw;
 }
 
 .footer__links {
-  margin-bottom: 60px;
+  margin-bottom: 3.125vw;
 }
 
 .footer__links ul {
@@ -561,39 +562,38 @@ textarea {
 }
 
 .footer__links ul li:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 1.25vw;
 }
 
 .footer__links ul li a {
   color: var(--dop-white, #FFF);
-  font-size: 17px;
+  font-size: 0.8854166667vw;
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
 }
 
 .footer__tit {
-  margin-bottom: 30px;
+  margin-bottom: 1.5625vw;
   color: var(--dop-white, #FFF);
-  font-size: 26px;
+  font-size: 1.3541666667vw;
   font-style: normal;
   font-weight: 600;
 }
 
 .footer__tel {
-  margin-bottom: 30px;
+  margin-bottom: 1.5625vw;
   color: var(--dop-white, #FFF);
-  font-size: 24px;
+  font-size: 1.25vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px;
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
 
 .footer__tel a {
   color: var(--dop-white, #FFF);
-  font-size: 24px;
+  font-size: 1.25vw;
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
@@ -605,7 +605,7 @@ textarea {
 
 .footer__tel span {
   color: var(--dop-white, #FFF);
-  font-size: 14px;
+  font-size: 0.7291666667vw;
   font-style: normal;
   font-weight: 400;
   opacity: 0.5;
@@ -613,7 +613,7 @@ textarea {
   line-height: normal;
   display: block;
   letter-spacing: normal;
-  margin-bottom: 10px;
+  margin-bottom: 0.5208333333vw;
 }
 
 .footer__bottom {
@@ -622,13 +622,13 @@ textarea {
 
 .footer__item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3.125vw;
+  padding-bottom: 3.125vw;
 }
 
 .footer__copy {
   color: var(--dop-white, #FFF);
-  font-size: 14px;
+  font-size: 0.7291666667vw;
   font-style: normal;
   font-weight: 500;
   opacity: 0.6999999881;
@@ -644,8 +644,8 @@ textarea {
 }
 
 .footer__info {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3.125vw;
+  padding-bottom: 3.125vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -659,25 +659,25 @@ textarea {
 .footer__logo {
   font-size: 0;
   display: block;
-  max-width: 230px;
+  max-width: 11.9791666667vw;
   width: 100%;
-  margin-right: 40px;
+  margin-right: 2.0833333333vw;
 }
 
 .footer__title {
   color: var(--dop-white, #FFF);
-  font-size: 14px;
+  font-size: 0.7291666667vw;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  max-width: 180px;
+  max-width: 9.375vw;
   width: 100%;
 }
 
 .footer__menu {
   text-decoration: none;
   color: var(--dop-white, #FFF);
-  font-size: 17px;
+  font-size: 0.8854166667vw;
   font-style: normal;
   font-weight: 500;
 }
@@ -692,8 +692,8 @@ textarea {
 
 .footer__socs a {
   font-size: 0;
-  width: 50px;
-  height: 50px;
+  width: 2.6041666667vw;
+  height: 2.6041666667vw;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
@@ -826,5 +826,78 @@ textarea {
 
   .header__burger {
     display: block;
+  }
+
+  .footer__top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer__blocks {
+    flex-direction: column;
+  }
+
+  .footer__l-side {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0px;
+  }
+
+  .footer__main-menu > ul {
+    max-height: unset;
+  }
+
+  .footer__main-menu > ul > li {
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer__main-menu > ul > li > a {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .footer__main-menu > ul > li ul {
+    padding-top: 30px;
+  }
+
+  .footer__main-menu > ul > li ul li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .footer__main-menu > ul > li ul li a {
+    font-size: 14px;
+  }
+
+  .footer__r-side {
+    max-width: 100%;
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .footer__links {
+    margin-bottom: 60px;
+  }
+
+  .footer__links ul {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer__links ul li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .footer__links ul li a {
+    font-size: 14px;
+  }
+
+  .footer__tit {
+    font-size: 18px;
+    margin-bottom: 0px;
   }
 }
