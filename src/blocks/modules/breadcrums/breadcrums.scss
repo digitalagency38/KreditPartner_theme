@@ -1,0 +1,58 @@
+.breadcrums {
+    margin-top: vw(50);
+    margin-bottom: vw(90);
+    @media all and (max-width: 1023px) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+    &__splash {
+        width: 10px;
+        height: 10px;
+        margin-left: vw(14);
+        margin-right: vw(14);
+        background: url("data:image/svg+xml,%3Csvg width='7' height='9' viewBox='0 0 7 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 3.63397C7.16667 4.01887 7.16667 4.98113 6.5 5.36603L2 7.9641C1.33333 8.349 0.5 7.86788 0.5 7.09808L0.5 1.90192C0.5 1.13212 1.33333 0.650998 2 1.0359L6.5 3.63397Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% no-repeat;
+        @media all and (max-width: 1023px) {
+            display: none;
+        }
+    }
+    span {
+        color: var(--main-orange, #F48432);
+        font-size: vw(16);
+        font-style: normal;
+        font-weight: 500;
+        @media all and (max-width: 1023px) {
+            &:not(:first-child) {
+                display: none;
+            }
+            &:first-child {
+                font-size: 14px;
+            }
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            span {
+                color: var(--main-blu, #224875);
+                @media all and (max-width: 1023px) {
+                    color: var(--main-orange, #F48432);
+                    position: relative;
+                    padding-left: 40px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        margin-top: -10px;
+                        width: 20px;
+                        height: 20px;
+                        background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.41954 15.5002C8.17547 15.7443 7.77974 15.7443 7.53566 15.5002L2.47733 10.4419C2.36012 10.3247 2.29427 10.1657 2.29427 9.99996C2.29427 9.83419 2.36012 9.67522 2.47733 9.55801L7.53566 4.49968C7.77974 4.2556 8.17547 4.2556 8.41954 4.49968C8.66362 4.74376 8.66362 5.13949 8.41954 5.38356L3.80315 9.99996L8.41954 14.6163C8.66362 14.8604 8.66362 15.2562 8.41954 15.5002Z' fill='%23224875'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.7109 9.99996C17.7109 10.3451 17.4311 10.625 17.0859 10.625H3.06094C2.71576 10.625 2.43594 10.3451 2.43594 9.99996C2.43594 9.65478 2.71576 9.37496 3.06094 9.37496H17.0859C17.4311 9.37496 17.7109 9.65478 17.7109 9.99996Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

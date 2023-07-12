@@ -12,7 +12,8 @@
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
         <main class="content">
-            @@include('blocks/modules/page_404/page_404.html', {})
+            @@include('blocks/modules/breadcrums/breadcrums.html', {})
+            @@include('blocks/modules/text_page/text_page.html', {})
         </main>
         @@include('blocks/modules/footer/footer.html', {})
         @@include('blocks/modules/modals/main.modal.html', {})

@@ -1,0 +1,46 @@
+.text_page {
+    h1 {
+        margin: 0;
+        color: var(--txt-h, #0A0A3E);
+        font-size: vw(50);
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: vw(50);
+        @media all and (max-width: 1023px) {
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+    }
+    padding-bottom: vw(120);
+    @media all and (max-width: 1023px) {
+        padding-bottom: 60px;
+    }
+    &__text {
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        color: var(--txt-body, #28285C);
+        font-size: vw(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+        }
+        h2 {
+            color: var(--txt-h, #0A0A3E);
+            font-size: vw(28);
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0.56px;
+            @media all and (max-width: 1023px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
