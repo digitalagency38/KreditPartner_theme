@@ -1413,6 +1413,38 @@ textarea {
     width: 100%;
   }
 
+  .post_page__post {
+    margin-bottom: 0;
+  }
+
+  .post_page__post--img {
+    position: relative;
+    height: auto;
+    padding-top: 100%;
+    overflow: hidden;
+  }
+
+  .post_page__post--img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .post_page__post--info {
+    padding: 30px 20px;
+  }
+
+  .post_page__post--date {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .post_page__post--title {
+    font-size: 20px;
+  }
+
   .text_page h1 {
     margin-bottom: 40px;
     font-size: 36px;
