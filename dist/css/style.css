@@ -8,15 +8,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
-  font-weight: 800;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 @font-face {
@@ -50,8 +43,15 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 body {
@@ -486,6 +486,60 @@ textarea {
   margin-left: 1px;
 }
 
+.page_404 {
+  padding-top: 3.125vw;
+  padding-bottom: 6.25vw;
+  text-align: center;
+}
+
+.page_404__img {
+  max-width: 45.8333333333vw;
+  width: 100%;
+  margin-bottom: 4.1666666667vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page_404__img svg {
+  width: 100%;
+  height: auto;
+}
+
+.page_404__title {
+  margin-bottom: 2.0833333333vw;
+  color: var(--txt-h, #0A0A3E);
+  text-align: center;
+  font-size: 2.6041666667vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.page_404__text {
+  margin-bottom: 2.6041666667vw;
+  color: var(--txt-h, #0A0A3E);
+  text-align: center;
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.page_404__btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 10px;
+  background: var(--main-blu, #224875);
+  max-width: 11.9791666667vw;
+  width: 100%;
+  padding: 1.1458333333vw 1.0416666667vw;
+  color: var(--dop-white, #FFF);
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
 .footer__top {
   background: var(--main-blu, #224875);
   padding-top: 8.75vw;
@@ -829,6 +883,35 @@ textarea {
 
   .header__burger {
     display: block;
+  }
+
+  .page_404 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page_404__img {
+    margin-bottom: 40px;
+    max-width: 375px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .page_404__title {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  .page_404__text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .page_404__btn {
+    padding: 22px 20px;
+    max-width: 230px;
+    font-size: 16px;
   }
 
   .footer__top {
