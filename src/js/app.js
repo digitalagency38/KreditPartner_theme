@@ -7,6 +7,9 @@ import $ from 'jquery';
 import Header from '../blocks/modules/header/header.js';
 import FirstBlock from '../blocks/modules/first_block/first_block.js';
 import MainSpec from '../blocks/modules/main_spec/main_spec.js';
+
+import MainPost from '../blocks/modules/main_post/main_post.js';
+
 import PostPage from '../blocks/modules/post_page/post_page.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -24,6 +27,9 @@ window.app = new Vue({
         }),
         firstBlock: new FirstBlock(),
         mainSpec: new MainSpec(),
+
+        mainPost: new MainPost(),
+
         postPage: new PostPage(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -41,6 +47,9 @@ window.app = new Vue({
         this.header.init();
         this.firstBlock.init();
         this.mainSpec.init();
+        
+        this.mainPost.init();
+
         this.postPage.init();
         this.modals.init();
     },
