@@ -1,11 +1,11 @@
 import Glide from '@glidejs/glide';
 
-const PostPage = class PostPage {
+const MainSpec = class MainSpec {
     constructor(){}
     initSlider() {
         document.addEventListener('DOMContentLoaded', () => {
             if (window.innerWidth <= 1023) {
-              new Glide('.post_glide_js', {
+              new Glide('.spec_glide_js', {
                 type: 'carousel',
                 perView: 1,
                 startAt: 0,
@@ -28,4 +28,4 @@ const PostPage = class PostPage {
     }
 }
 
-export default PostPage;
+export default MainSpec;

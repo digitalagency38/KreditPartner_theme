@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="format-detection" content="telephone=no" />
-    <title>Главная</title>
+    <title>Статьи</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
         <main class="content">
-            @@include('blocks/modules/first_block/first_block.html', {})
-            @@include('blocks/modules/main_spec/main_spec.html', {})
+            @@include('blocks/modules/breadcrums/breadcrums.html', {})
+            @@include('blocks/modules/posts_page/posts_page.html', {})
         </main>
         @@include('blocks/modules/footer/footer.html', {})
         @@include('blocks/modules/modals/main.modal.html', {})
