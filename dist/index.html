@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="format-detection" content="telephone=no" />
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230711230829">
+    <link rel="stylesheet" href="css/style.css?_v=20230712085759">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -95,7 +95,14 @@
                     </ul>
                 </li>
                 <li><a href="#">Сбережения</a></li>
-                <li><a href="#">Рефинансирование</a></li>
+                <li class="menu-item-has-children">
+                    <a href="#">Рефинансирование</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Рефинансирование 1</a></li>
+                        <li><a href="#">Рефинансирование 2</a></li>
+                        <li><a href="#">Рефинансирование 3</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Для бизнеса</a></li>
             </ul>
         </nav>
@@ -167,9 +174,23 @@
                 </div>
                 <nav class="header__burger--main-menu">
                     <ul>
-                        <li><a href="#">Займы</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Займы</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Займы 1</a></li>
+                                <li><a href="#">Займы 2</a></li>
+                                <li><a href="#">Займы 3</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Сбережения</a></li>
-                        <li><a href="#">Рефинансирование</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Рефинансирование</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Рефинансирование 1</a></li>
+                                <li><a href="#">Рефинансирование 2</a></li>
+                                <li><a href="#">Рефинансирование 3</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Для бизнеса</a></li>
                     </ul>
                 </nav>
@@ -370,6 +391,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20230711230829"></script>
+    <script src="js/app.min.js?_v=20230712085759"></script>
 </body>
 </html>

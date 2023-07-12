@@ -15,22 +15,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
   font-weight: 800;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
 }
 
 @font-face {
@@ -52,6 +38,20 @@
   font-display: swap;
   src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
   font-weight: 100;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 body {
@@ -260,6 +260,16 @@ textarea {
   text-decoration: none;
 }
 
+.header__main-menu ul li .sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10.4166666667vw;
+  padding: 1.0416666667vw;
+}
+
 .header__main-menu ul li.menu-item-has-children {
   position: relative;
   padding-right: 0.9375vw;
@@ -275,16 +285,6 @@ textarea {
   right: 0;
   top: 50%;
   background: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.29289 7.29289L1.70711 4.70711C1.07714 4.07714 1.52331 3 2.41421 3H7.58579C8.47669 3 8.92286 4.07714 8.2929 4.70711L5.70711 7.29289C5.31658 7.68342 4.68342 7.68342 4.29289 7.29289Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50%/100% no-repeat;
-}
-
-.header__main-menu ul li .sub-menu {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10.4166666667vw;
-  padding: 1.0416666667vw;
 }
 
 .header__buttons {
@@ -399,6 +399,10 @@ textarea {
   font-style: normal;
   font-weight: 600;
   text-decoration: none;
+}
+
+.header__burger--main-menu .sub-menu {
+  display: none;
 }
 
 .header__burger--menu {
@@ -596,7 +600,6 @@ textarea {
   font-size: 1.25vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px;
   letter-spacing: 0.96px;
   text-transform: uppercase;
   display: block;
@@ -897,7 +900,80 @@ textarea {
   }
 
   .footer__tit {
-    font-size: 18px;
+    font-size: 26px;
     margin-bottom: 0px;
+  }
+
+  .footer__tel {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .footer__tel a {
+    font-size: 20px;
+  }
+
+  .footer__tel span {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer__item {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer__copy {
+    font-size: 14px;
+  }
+
+  .footer__info {
+    padding-top: 0;
+    padding-bottom: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer__logo {
+    margin-right: 0;
+    max-width: 230px;
+    margin-bottom: 30px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+    max-width: 100%;
+    opacity: 0.5;
+  }
+
+  .footer__menu {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 17px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer__link {
+    padding-top: 30px;
+  }
+
+  .footer__socs {
+    margin-top: 24px;
+  }
+
+  .footer__socs a {
+    width: 50px;
+    height: 50px;
   }
 }

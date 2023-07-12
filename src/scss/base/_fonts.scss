@@ -13,20 +13,8 @@
 @font-face {
 	font-family: "Mont";
 	font-display: swap;
-	src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-	font-weight: 300;
-}
-@font-face {
-	font-family: "Mont";
-	font-display: swap;
 	src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
 	font-weight: 800;
-}
-@font-face {
-	font-family: "Mont";
-	font-display: swap;
-	src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-	font-weight: 700;
 }
 @font-face {
 	font-family: "Mont";
@@ -45,4 +33,16 @@
 	font-display: swap;
 	src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
 	font-weight: 100;
+}
+@font-face {
+	font-family: "Mont";
+	font-display: swap;
+	src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Mont";
+	font-display: swap;
+	src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+	font-weight: 300;
 }
