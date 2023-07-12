@@ -42,6 +42,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "jquery": "^3.6.0",
     "vue": "^2.6.14"
   }
