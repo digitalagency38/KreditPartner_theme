@@ -1,25 +1,25 @@
-import Glide from '@glidejs/glide';
+import $ from 'jquery';
+import 'slick-carousel';
 
 const MainPost = class MainPost {
     constructor(){}
     initSlider() {
         document.addEventListener('DOMContentLoaded', () => {
             if (window.innerWidth <= 1023) {
-              new Glide('.m-post_glide_js', {
-                type: 'carousel',
-                perView: 1,
-                startAt: 0,
-                gap: 40,
-                autoplay: 3000,
-                breakpoints: {
-                  1024: {
-                    perView: 2
-                  },
-                  520: {
-                    perView: 1
+              $('.js_main_post').slick({
+                slidesToShow: 2,
+                arrows: false,
+                customPaging: '20',
+                slidesToScroll: 1,
+                responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      variableWidth: true
+                    }
                   }
-                }
-              }).mount();
+                ]
+              });
             }
         });
     }
