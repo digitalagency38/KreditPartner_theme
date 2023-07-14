@@ -109,20 +109,6 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
   font-weight: 800;
 }
@@ -137,8 +123,15 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
+  font-weight: 600;
 }
 
 @font-face {
@@ -151,8 +144,15 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
-  font-weight: 600;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
 }
 
 body {
@@ -408,6 +408,10 @@ textarea {
   font-size: 0.8333333333vw;
   font-style: normal;
   font-weight: 500;
+}
+
+.header__button span {
+  white-space: nowrap;
 }
 
 .header__button svg {
@@ -1744,6 +1748,147 @@ textarea {
   line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+}
+
+.main_map {
+  display: flex;
+}
+
+.main_map__l-side {
+  padding: 8.3333333333vw 2.9166666667vw 9.8958333333vw 13.5416666667vw;
+  background: var(--dop-lite-grey, #F9F9F9);
+  width: 50%;
+}
+
+.main_map__title {
+  color: var(--txt-h, #0A0A3E);
+  font-size: 2.6041666667vw;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 2.6041666667vw;
+}
+
+.main_map__info {
+  padding: 2.0833333333vw;
+  border-radius: 10px;
+  background: var(--dop-white, #FFF);
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_map__info--l-side {
+  width: calc(50% - 1.5625vw);
+}
+
+.main_map__info--r-side {
+  width: calc(50% - 1.5625vw);
+}
+
+.main_map__info--tel:not(:last-child) {
+  margin-bottom: 3.125vw;
+}
+
+.main_map__info--tel span {
+  opacity: 0.5;
+  color: var(--txt-body, #28285C);
+  font-size: 0.7291666667vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0.5208333333vw;
+  display: block;
+}
+
+.main_map__info--tel a {
+  text-decoration: none;
+  color: var(--txt-body, #28285C);
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+.main_map__info--tel div {
+  color: var(--txt-body, #28285C);
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+.main_map__info--socs {
+  margin-top: 1.25vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_map__info--socs a {
+  width: 2.6041666667vw;
+  height: 2.6041666667vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c4c4c4;
+  margin-right: -1px;
+}
+
+.main_map__info--socs a svg {
+  max-width: 0.9375vw;
+  max-height: 0.9375vw;
+}
+
+.main_map__menu {
+  margin-bottom: 0.5208333333vw;
+}
+
+.main_map__menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -1.0416666667vw;
+  margin-right: -1.0416666667vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_map__menu ul li {
+  display: flex;
+  width: calc(50% - 2.0833333333vw);
+  margin-left: 1.0416666667vw;
+  margin-right: 1.0416666667vw;
+}
+
+.main_map__menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--txt-body, #28285C);
+  font-size: 0.78125vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 1.5625vw;
+}
+
+.main_map__menu ul li a span:first-child {
+  text-decoration: none;
+  flex: 0 0 1.1979166667vw;
+  margin-right: 10px;
+  color: var(--main-green, #7CC049);
+  font-size: 0.78125vw;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.main_map__menu ul li a span:last-child {
+  text-decoration: underline;
+}
+
+.main_map__r-side {
+  width: 50%;
+  height: 52.2395833333vw;
 }
 
 .posts_page {
@@ -3257,6 +3402,19 @@ textarea {
   .main_post .slick-list {
     margin-left: -10px;
     margin-right: -10px;
+  }
+
+  .main_map {
+    flex-direction: column-reverse;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--dop-lite-grey, #F9F9F9);
+  }
+
+  .main_map__l-side {
+    padding: 0;
+    width: 100%;
+    background: none;
   }
 
   .posts_page {

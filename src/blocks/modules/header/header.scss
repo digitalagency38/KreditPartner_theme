@@ -209,6 +209,9 @@
                 margin-right: 20px;
             }
         }
+        span {
+            white-space: nowrap;
+        }
         svg {
             flex: 0 0 vw(20);
             margin-right: vw(20);
