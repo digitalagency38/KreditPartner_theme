@@ -1,0 +1,140 @@
+.service_page_first {
+    overflow: hidden;
+    padding-top: vw(50);
+    padding-bottom: vw(125);
+    background-size: vw(1078) !important;
+    @media all and (max-width: 1023px) {
+        padding-top: 25px;
+        padding-bottom: 60px;
+    }
+    @media all and (max-width: 768px) {
+        padding-bottom: 272px;
+        background-position: 50% 100% !important;
+        background-size: 380px !important;
+    }
+    &__info {
+        max-width: vw(785);
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            max-width: 600px;
+        }
+    }
+    &__title {
+        margin-bottom: vw(20);
+        color: var(--dop-white, #FFF);
+        font-size: vw(50);
+        font-style: normal;
+        font-weight: 600;
+        @media all and (max-width: 1023px) {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    }
+    &__items {
+        padding-bottom: vw(20);
+        display: flex;
+        flex-wrap: wrap;
+        @media all and (max-width: 1023px) {
+            padding-bottom: 10px;
+        }
+    }
+    &__item {
+        padding-bottom: vw(20);
+        color: var(--main-green, #7CC049);
+        font-size: vw(40);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 56px */
+        &:not(:last-child) {
+            margin-right: vw(40);
+            @media all and (max-width: 1023px) {
+                margin-right: 10px;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            padding-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: vw(50);
+        @media all and (max-width: 1023px) {
+            margin-bottom: 20px;
+        }
+        li {
+            color: var(--dop-white, #FFF);
+            font-size: vw(16);
+            font-style: normal;
+            font-weight: 500;
+            position: relative;
+            padding-left: vw(26);
+            &:not(:last-child) {
+                margin-bottom: vw(20);
+                @media all and (max-width: 1023px) {
+                    margin-bottom: 20px;
+                }
+            }
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+                padding-left: 20px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 7px;
+                background: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5L4 8L11 1' stroke='%237CC049' stroke-width='2'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+                margin-top: -5px;
+                top: 50%;
+                left: 0;
+                @media all and (max-width: 1023px) {
+                    margin-top: 8px;
+                    top: 0;
+                }
+            }
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @media all and (max-width: 1023px) {
+            padding-top: 20px;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        text-decoration: none;
+        &--big {
+            padding: vw(22) vw(20);
+            color: var(--main-blu, #224875);
+            font-size: vw(16);
+            font-style: normal;
+            font-weight: 500;
+            border-radius: 10px;
+            background: var(--dop-white, #FFF);
+            margin-right: vw(40);
+            @media all and (max-width: 1023px) {
+                padding: 22px 20px;
+                font-size: 16px;
+                margin-right: 0;
+            }
+        }
+        &--small {
+            padding: vw(9) 0;
+            border-bottom: 1px solid var(--dop-white, #FFF);
+            color: var(--dop-white, #FFF);
+            font-size: vw(16);
+            font-style: normal;
+            font-weight: 500;
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+                padding: 9px 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}
