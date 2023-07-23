@@ -9,7 +9,7 @@ import FirstBlock from '../blocks/modules/first_block/first_block.js';
 import MainSpec from '../blocks/modules/main_spec/main_spec.js';
 import MainNews from '../blocks/modules/main_news/main_news.js';
 import MainPost from '../blocks/modules/main_post/main_post.js';
-
+import ServProg from '../blocks/modules/serv_program/serv_program.js';
 import PostPage from '../blocks/modules/post_page/post_page.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -29,7 +29,7 @@ window.app = new Vue({
         mainSpec: new MainSpec(),
         mainNews: new MainNews(),
         mainPost: new MainPost(),
-
+        servProg: new ServProg(),
         postPage: new PostPage(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -49,7 +49,7 @@ window.app = new Vue({
         this.mainSpec.init();
         this.mainNews.init();
         this.mainPost.init();
-
+        this.servProg.init();
         this.postPage.init();
         this.modals.init();
     },
