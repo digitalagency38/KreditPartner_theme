@@ -1,0 +1,103 @@
+.serv_dop {
+    padding-top: vw(160);
+    padding-bottom: vw(80);
+    @media all and (max-width: 1023px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__title {
+        padding-bottom: vw(100);
+        color: var(--txt-h, #0A0A3E);
+        font-size: vw(50);
+        font-style: normal;
+        font-weight: 600;
+        @media all and (max-width: 1023px) {
+            font-size: 36px;
+            padding-bottom: 30px;
+        }
+    }
+    .tabs {
+        border-bottom: 2px solid rgba(34, 72, 117, 0.20);
+        @media all and (max-width: 1023px) {
+            display: none;
+        }
+    }
+    .tab {
+        cursor: pointer;
+        width: 100%;
+        padding-bottom: vw(20);
+        text-align: center;
+        color: var(--txt-h, #0A0A3E);
+        text-align: center;
+        font-size: vw(30);
+        font-style: normal;
+        font-weight: 500;
+        opacity: 0.20000000298023224;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -2px;
+        &.active {
+            opacity: 1;
+            border-bottom: 2px solid var(--txt-h, #0A0A3E);
+            font-weight: 600;
+        }
+    }
+    .tab-content {
+        display: none;
+        padding-top: vw(50);
+        @media all and (max-width: 1023px) {
+            padding-top: 30px;
+        }
+    }
+    .tab-content.active {
+        display: block;
+    }
+    .tab-buttons {
+        display: flex;
+        width: 100%;
+    }
+    .tabs_select {
+        display: none;
+        @media all and (max-width: 1023px) {
+            display: block;
+        }
+    }
+    &__item {
+        padding: vw(30) vw(40);
+        border-radius: 10px;
+        background: #F9F9F9;
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+        @media all and (max-width: 1023px) {
+            padding: 30px 20px;
+            flex-direction: column;
+        }
+    }
+    &__number {
+        flex: 0 0 vw(50);
+        margin-right: vw(20);
+        color: var(--main-orange, #F48432);
+        font-size: vw(28);
+        font-style: normal;
+        font-weight: 600;
+        @media all and (max-width: 1023px) {
+            flex: none;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+    }
+    &__txt {
+        width: 100%;
+        color: var(--txt-body, #28285C);
+        font-size: vw(24);
+        font-style: normal;
+        font-weight: 600;
+        @media all and (max-width: 1023px) {
+            font-size: 18px;
+        }
+    }
+}

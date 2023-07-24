@@ -62,6 +62,13 @@
                 margin-top: -10px;
             }
         }
+        &:hover {
+            color: #00204D;
+            border-color: #00204D;
+            &:before {
+                background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.583 4.49968C11.8271 4.2556 12.2229 4.2556 12.4669 4.49968L17.5253 9.55801C17.6425 9.67522 17.7083 9.83419 17.7083 9.99995C17.7083 10.1657 17.6425 10.3247 17.5253 10.4419L12.4669 15.5002C12.2229 15.7443 11.8271 15.7443 11.583 15.5002C11.339 15.2562 11.339 14.8604 11.583 14.6163L16.1994 9.99995L11.583 5.38356C11.339 5.13948 11.339 4.74376 11.583 4.49968Z' fill='%23224875'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.29166 9.99995C2.29166 9.65478 2.57148 9.37495 2.91666 9.37495H16.9417C17.2868 9.37495 17.5667 9.65478 17.5667 9.99995C17.5667 10.3451 17.2868 10.625 16.9417 10.625H2.91666C2.57148 10.625 2.29166 10.3451 2.29166 9.99995Z' fill='%2300204D'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+            }
+        }
     }
     &__blocks {
         display: flex;
@@ -169,6 +176,15 @@
                     color: var(--txt-h, #0A0A3E);
                 }
             }
+        }
+        &:hover {
+            background: #0E3461;
+            .main_news__date, .main_news__tit {
+                color: #fff;
+            }
+        }
+        &:active {
+            background: #00204D;
         }
     }
     .glide {

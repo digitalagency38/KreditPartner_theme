@@ -1,4 +1,5 @@
 .main_map {
+    overflow: hidden;
     display: flex;
     @media all and (max-width: 1023px) {
         flex-direction: column-reverse;
@@ -83,6 +84,15 @@
                 svg {
                     max-width: vw(18);
                     max-height: vw(18);
+                }
+                &:hover {
+                    background: var(--main-blu, #224875);
+                    path {
+                        fill: #fff;
+                    }
+                }
+                &:active {
+                    background: #00204D;
                 }
             }
         }

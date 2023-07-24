@@ -186,6 +186,19 @@
         @media all and (max-width: 1023px) {
             margin-bottom: 0;
         }
+        &:hover {
+            background: #0E3461;
+            .spec_page__post--title, .spec_page__post--txt {
+                color: #fff;
+            }
+            .spec_page__post--link {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+        &:active {
+            background: #00204D;
+        }
         &--img {
             height: vw(260);
             position: relative;

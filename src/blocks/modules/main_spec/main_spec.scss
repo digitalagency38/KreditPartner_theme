@@ -91,6 +91,19 @@
             margin-left: 0;
             margin-right: 0;
         }
+        &:hover {
+            background: #224875;
+            .main_spec__tit, .main_spec__text {
+                color: #fff;
+            }
+            .main_spec__link {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+        &:active {
+            background: #00204D;
+        }
     }
     &__img {
         overflow: hidden;

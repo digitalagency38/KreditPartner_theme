@@ -63,6 +63,15 @@
                 margin-top: -10px;
             }
         }
+        &:hover {
+            background: #0E3461;
+            .main_news__date, .main_news__tit {
+                color: #fff;
+            }
+        }
+        &:active {
+            background: #00204D;
+        }
     }
     &__blocks {
         display: flex;
@@ -95,6 +104,15 @@
         }
         @media all and (max-width: 768px) {
             max-width: 260px !important;
+        }
+        &:hover {
+            background: #0E3461;
+            .main_post__date, .main_post__tit {
+                color: #fff;
+            }
+        }
+        &:active {
+            background: #00204D;
         }
     }
     &__img {

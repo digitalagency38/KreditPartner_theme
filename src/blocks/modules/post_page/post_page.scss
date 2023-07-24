@@ -146,7 +146,7 @@
         font-size: vw(16);
         font-style: normal;
         font-weight: 500;
-        padding: vw(22) vw(20);
+        padding: vw(16) vw(20);
         text-decoration: none;
         text-align: center;
         border-radius: 10px;
@@ -155,6 +155,10 @@
         @media all and (max-width: 1023px) {
             font-size: 16px;
             padding: 22px 20px;
+        }
+        &:hover {
+            color: #224875;
+            background: #fff;
         }
     }
     &__block {
@@ -185,6 +189,15 @@
         box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
         @media all and (max-width: 1023px) {
             margin-bottom: 0;
+        }
+        &:hover {
+            background: #0E3461;
+            .post_page__post--date, .post_page__post--title {
+                color: #fff;
+            }
+        }
+        &:active {
+            background: #00204D;
         }
         &--img {
             height: vw(260);

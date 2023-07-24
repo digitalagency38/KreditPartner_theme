@@ -167,6 +167,13 @@
                 font-size: 16px;
                 margin-right: 0;
             }
+            &:hover {
+                background: #0E3461;
+                color: #fff;
+            }
+            &:active {
+                background: #00204D;
+            }
         }
         &--small {
             padding: vw(9) 0;
@@ -181,6 +188,9 @@
                 margin-top: 20px;
             }
         }
+    }
+    .breadcrums__splash {
+        background: url("data:image/svg+xml,%3Csvg width='7' height='9' viewBox='0 0 7 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 3.63397C7.16667 4.01887 7.16667 4.98113 6.5 5.36603L2 7.9641C1.33333 8.349 0.5 7.86788 0.5 7.09808L0.5 1.90192C0.5 1.13212 1.33333 0.650998 2 1.0359L6.5 3.63397Z' fill='%23ffffff'/%3E%3C/svg%3E%0A") 50% no-repeat;
     }
     .blue_color {
         .breadcrums span a span:before {

@@ -10,6 +10,8 @@ import MainSpec from '../blocks/modules/main_spec/main_spec.js';
 import MainNews from '../blocks/modules/main_news/main_news.js';
 import MainPost from '../blocks/modules/main_post/main_post.js';
 import ServProg from '../blocks/modules/serv_program/serv_program.js';
+import ServZaym from '../blocks/modules/serv_zaym/serv_zaym.js';
+import ServDop from '../blocks/modules/serv_dop/serv_dop.js';
 import PostPage from '../blocks/modules/post_page/post_page.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -30,6 +32,8 @@ window.app = new Vue({
         mainNews: new MainNews(),
         mainPost: new MainPost(),
         servProg: new ServProg(),
+        servZaym: new ServZaym(),
+        servDop: new ServDop(),
         postPage: new PostPage(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -50,6 +54,8 @@ window.app = new Vue({
         this.mainNews.init();
         this.mainPost.init();
         this.servProg.init();
+        this.servZaym.init();
+        this.servDop.init();
         this.postPage.init();
         this.modals.init();
     },

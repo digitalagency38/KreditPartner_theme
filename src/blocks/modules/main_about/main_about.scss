@@ -164,6 +164,10 @@
         @media all and (max-width: 1023px) {
             display: none;
         }
+        &:hover {
+            color: #224875;
+            background: #FFF;
+        }
     }
     &__r-side {
         margin-top: auto;
