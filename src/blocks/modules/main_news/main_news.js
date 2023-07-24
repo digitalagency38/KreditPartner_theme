@@ -12,7 +12,6 @@ const MainNews = class MainNews {
               perView: 1,
               startAt: 0,
               gap: 40,
-              autoplay: 3000,
               breakpoints: {
                 1024: {
                   perView: 2
