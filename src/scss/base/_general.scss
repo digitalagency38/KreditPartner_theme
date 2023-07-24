@@ -81,6 +81,13 @@ textarea {
 }
 
 // scrollbar end
-.block_white .serv_zaym{
-    background: var(--dop-lite-grey, #fff);
+.block_white  {
+    .serv_zaym, .serv_form {
+        background: var(--dop-lite-grey, #fff);
+    }
+    .serv_form {
+        .serv_form__r-side form {
+            background: #F9F9F9;
+        }
+    }
 }
