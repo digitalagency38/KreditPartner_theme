@@ -2076,7 +2076,7 @@ textarea {
   font-size: 1.3541666667vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%;
+  line-height: normal;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: break-spaces;
