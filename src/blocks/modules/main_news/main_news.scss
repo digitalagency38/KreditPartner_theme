@@ -134,6 +134,9 @@
         display: -webkit-box;
         @media all and (max-width: 1023px) {
             font-size: 20px;
+            display: block;
+            overflow: unset;
+            line-clamp: unset;
         }
     }
     &__block {
