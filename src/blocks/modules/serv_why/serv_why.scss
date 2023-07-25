@@ -1,0 +1,81 @@
+.serv_why {
+    padding-top: vw(160);
+    padding-bottom: vw(120);
+    @media all and (max-width: 1023px) {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    &__title {
+        padding-bottom: vw(50);
+        color: var(--txt-h, #0A0A3E);
+        font-size: vw(50);
+        font-style: normal;
+        font-weight: 600;
+        @media all and (max-width: 1023px) {
+            font-size: 36px;
+            padding-bottom: 30px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: vw(-20);
+        margin-right: vw(-20);
+        @media all and (max-width: 1023px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__block {
+        margin-left: vw(20);
+        margin-right: vw(20);
+        margin-bottom: vw(40);
+        width: calc(33.3% - vw(40));
+        border-radius: 10px;
+        background: var(--dop-white, #FFF);
+        box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
+        padding: vw(30) vw(20);
+        @media all and (max-width: 1023px) {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 0;
+            padding: 30px 20px;
+            margin-bottom: 40px;
+        }
+        @media all and (max-width: 768px) {
+            width: 246px !important;
+            margin-right: 20px;
+        }
+    }
+    &__icon {
+        margin-bottom: vw(50);
+        width: vw(40);
+        height: vw(40);
+        @media all and (max-width: 1023px) {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 30px;
+        }
+    }
+    &__tit {
+        margin-bottom: vw(30);
+        color: var(--txt-body, #28285C);
+        font-size: vw(24);
+        font-style: normal;
+        font-weight: 600;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+    &__txt {
+        color: var(--txt-body, #28285C);
+        font-size: vw(18);
+        font-style: normal;
+        font-weight: 500;
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+        }
+    }
+}

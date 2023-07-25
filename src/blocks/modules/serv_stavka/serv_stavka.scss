@@ -1,0 +1,52 @@
+.serv_stavka {
+    padding-top: vw(60);
+    padding-bottom: vw(130);
+    @media all and (max-width: 1023px) {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: vw(-10);
+        margin-right: vw(-10);
+        @media all and (max-width: 1023px) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+    &__item {
+        max-width: vw(300);
+        width: 100%;
+        margin-left: vw(10);
+        margin-right: vw(10);
+        margin-bottom: vw(30);
+        @media all and (max-width: 1023px) {
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            max-width: 300px;
+        }
+    }
+    &__title {
+        margin-bottom: vw(20);
+        color: var(--txt-h, #0A0A3E);
+        font-size: vw(30);
+        font-style: normal;
+        font-weight: 600;
+        @media all and (max-width: 1023px) {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    &__text {
+        color: var(--txt-body, #28285C);
+        font-size: vw(14);
+        font-style: normal;
+        font-weight: 500;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+        }
+    }
+}

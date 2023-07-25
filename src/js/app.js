@@ -12,6 +12,7 @@ import MainPost from '../blocks/modules/main_post/main_post.js';
 import ServProg from '../blocks/modules/serv_program/serv_program.js';
 import ServZaym from '../blocks/modules/serv_zaym/serv_zaym.js';
 import ServDop from '../blocks/modules/serv_dop/serv_dop.js';
+import ServWhy from '../blocks/modules/serv_why/serv_why.js';
 import PostPage from '../blocks/modules/post_page/post_page.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -34,6 +35,7 @@ window.app = new Vue({
         servProg: new ServProg(),
         servZaym: new ServZaym(),
         servDop: new ServDop(),
+        servWhy: new ServWhy(),
         postPage: new PostPage(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -56,6 +58,7 @@ window.app = new Vue({
         this.servProg.init();
         this.servZaym.init();
         this.servDop.init();
+        this.servWhy.init();
         this.postPage.init();
         this.modals.init();
     },

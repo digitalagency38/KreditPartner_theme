@@ -477,15 +477,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 @font-face {
@@ -498,8 +491,22 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
   font-weight: 100;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
+  font-weight: 600;
 }
 
 @font-face {
@@ -512,15 +519,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
-  font-weight: 600;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
 }
 
 body {
@@ -2652,6 +2652,11 @@ textarea {
   color: #fff;
 }
 
+.service_page_first .blue_color .service_page_first__btn--big:hover {
+  background: #fff;
+  color: #224875;
+}
+
 .service_page_first .blue_color .service_page_first__btn--small {
   border-color: #224875;
 }
@@ -4493,6 +4498,7 @@ textarea {
   height: 14.5833333333vw;
   overflow: hidden;
   margin-top: auto;
+  min-height: 213px;
 }
 
 .serv_kredit__img img {
@@ -4500,6 +4506,94 @@ textarea {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.serv_stavka {
+  padding-top: 3.125vw;
+  padding-bottom: 6.7708333333vw;
+}
+
+.serv_stavka__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -0.5208333333vw;
+  margin-right: -0.5208333333vw;
+}
+
+.serv_stavka__item {
+  max-width: 15.625vw;
+  width: 100%;
+  margin-left: 0.5208333333vw;
+  margin-right: 0.5208333333vw;
+  margin-bottom: 1.5625vw;
+}
+
+.serv_stavka__title {
+  margin-bottom: 1.0416666667vw;
+  color: var(--txt-h, #0A0A3E);
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.serv_stavka__text {
+  color: var(--txt-body, #28285C);
+  font-size: 0.7291666667vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.serv_why {
+  padding-top: 8.3333333333vw;
+  padding-bottom: 6.25vw;
+}
+
+.serv_why__title {
+  padding-bottom: 2.6041666667vw;
+  color: var(--txt-h, #0A0A3E);
+  font-size: 2.6041666667vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.serv_why__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.0416666667vw;
+  margin-right: -1.0416666667vw;
+}
+
+.serv_why__block {
+  margin-left: 1.0416666667vw;
+  margin-right: 1.0416666667vw;
+  margin-bottom: 2.0833333333vw;
+  width: calc(33.3% - 2.0833333333vw);
+  border-radius: 10px;
+  background: var(--dop-white, #FFF);
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
+  padding: 1.5625vw 1.0416666667vw;
+}
+
+.serv_why__icon {
+  margin-bottom: 2.6041666667vw;
+  width: 2.0833333333vw;
+  height: 2.0833333333vw;
+}
+
+.serv_why__tit {
+  margin-bottom: 1.5625vw;
+  color: var(--txt-body, #28285C);
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.serv_why__txt {
+  color: var(--txt-body, #28285C);
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .posts_page {
@@ -7140,11 +7234,13 @@ textarea {
   .serv_kredit__title {
     margin-bottom: 30px;
     font-size: 36px;
+    text-align: left;
   }
 
   .serv_kredit__text {
     margin-bottom: 30px;
     font-size: 16px;
+    text-align: left;
   }
 
   .serv_kredit__blocks {
@@ -7185,6 +7281,71 @@ textarea {
   .serv_kredit__list li:before {
     margin-top: 8px;
     top: 0;
+  }
+
+  .serv_stavka {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .serv_stavka__items {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .serv_stavka__item {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 300px;
+  }
+
+  .serv_stavka__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .serv_stavka__text {
+    font-size: 14px;
+  }
+
+  .serv_why {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .serv_why__title {
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
+
+  .serv_why__blocks {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .serv_why__block {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+
+  .serv_why__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .serv_why__tit {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .serv_why__txt {
+    font-size: 16px;
   }
 
   .posts_page {
@@ -7656,6 +7817,11 @@ textarea {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
+  }
+
+  .serv_why__block {
+    width: 246px !important;
+    margin-right: 20px;
   }
 
   .posts_page__blocks {

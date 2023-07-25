@@ -205,6 +205,10 @@
         .service_page_first__btn--big {
             background: #224875;
             color: #fff;
+            &:hover {
+                background: #fff;
+                color: #224875;
+            }
         }
         .service_page_first__btn--small {
             border-color: #224875;
