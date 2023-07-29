@@ -11,6 +11,9 @@ body {
     scroll-behavior: smooth;
     transition: all .3s ease;
 }
+.map-block, .map-block * {
+    transition: unset;
+}
 html,
 body {
     margin: 0;

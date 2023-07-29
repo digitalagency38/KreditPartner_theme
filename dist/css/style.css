@@ -477,13 +477,6 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
   font-weight: 200;
 }
@@ -498,15 +491,22 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 @font-face {
@@ -535,6 +535,11 @@ body {
   outline: none;
   scroll-behavior: smooth;
   transition: all 0.3s ease;
+}
+
+.map-block,
+.map-block * {
+  transition: unset;
 }
 
 html,
@@ -2366,6 +2371,10 @@ textarea {
   align-items: center;
 }
 
+.main_map__info.mob {
+  display: none;
+}
+
 .main_map__info--l-side {
   width: calc(50% - 1.5625vw);
 }
@@ -2462,17 +2471,7 @@ textarea {
   margin-right: 1.0416666667vw;
 }
 
-.main_map__menu ul li a {
-  text-decoration: none;
-  display: inline-block;
-  color: var(--txt-body, #28285C);
-  font-size: 0.78125vw;
-  font-style: normal;
-  font-weight: 500;
-  margin-bottom: 1.5625vw;
-}
-
-.main_map__menu ul li a span:first-child {
+.main_map__menu ul li span:first-child {
   text-decoration: none;
   flex: 0 0 1.1979166667vw;
   margin-right: 10px;
@@ -2482,13 +2481,20 @@ textarea {
   font-weight: 700;
 }
 
-.main_map__menu ul li a span:last-child {
+.main_map__menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--txt-body, #28285C);
+  font-size: 0.78125vw;
+  font-style: normal;
   text-decoration: underline;
+  font-weight: 500;
+  margin-bottom: 1.5625vw;
 }
 
 .main_map__r-side {
   width: 50%;
-  height: 52.2395833333vw;
+  height: auto;
 }
 
 .service_page_first {
@@ -6279,7 +6285,7 @@ textarea {
   }
 
   .main_map {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--dop-lite-grey, #F9F9F9);
@@ -6289,6 +6295,104 @@ textarea {
     padding: 0;
     width: 100%;
     background: none;
+  }
+
+  .main_map__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main_map__info {
+    display: none;
+    padding: 30px 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main_map__info.mob {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_map__info--l-side {
+    width: 100%;
+  }
+
+  .main_map__info--r-side {
+    width: 100%;
+  }
+
+  .main_map__info--tel:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .main_map__info--tel span {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .main_map__info--tel a {
+    font-size: 20px;
+  }
+
+  .main_map__info--tel div {
+    font-size: 20px;
+  }
+
+  .main_map__info--socs {
+    margin-top: 20px;
+  }
+
+  .main_map__info--socs a svg {
+    max-width: 18px;
+    max-height: 18px;
+  }
+
+  .main_map__info--socs a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .main_map__menu {
+    margin-bottom: 30px;
+  }
+
+  .main_map__menu ul {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+
+  .main_map__menu ul li {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--dop-white, #FFF);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
+  }
+
+  .main_map__menu ul li span {
+    display: none;
+  }
+
+  .main_map__menu ul li a {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .main_map__r-side {
+    min-height: 340px;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .service_page_first.zaym_bg {
