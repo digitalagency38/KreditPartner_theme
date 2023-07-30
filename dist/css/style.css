@@ -470,29 +470,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
   font-weight: 900;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
-  font-weight: 800;
 }
 
 @font-face {
@@ -505,8 +484,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
 }
 
 @font-face {
@@ -521,6 +500,27 @@
   font-display: swap;
   src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
   font-weight: 100;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 body {
@@ -4752,17 +4752,6 @@ textarea {
   background: #FFF;
 }
 
-.contact_page .submenu li a.isActive {
-  background: #224875;
-}
-
-.contact_page .submenu li a.isActive .contact_page__city,
-.contact_page .submenu li a.isActive .contact_page__item,
-.contact_page .submenu li a.isActive .contact_page__item span,
-.contact_page .submenu li a.isActive .contact_page__item div {
-  color: #fff;
-}
-
 .contact_page__city {
   margin-bottom: 1.0416666667vw;
   color: var(--txt-h, #0A0A3E);
@@ -4790,6 +4779,72 @@ textarea {
   text-transform: none;
   opacity: 0.5;
   letter-spacing: normal;
+}
+
+.about_page_first {
+  overflow: hidden;
+  padding-top: 2.6041666667vw;
+  padding-bottom: 6.5104166667vw;
+  background-size: 46.3541666667vw !important;
+  min-height: 34.375vw;
+}
+
+.about_page_first .blue_color .breadcrums span a span:before {
+  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.41954 15.5002C8.17547 15.7443 7.77974 15.7443 7.53566 15.5002L2.47733 10.4419C2.36012 10.3247 2.29427 10.1657 2.29427 9.99996C2.29427 9.83419 2.36012 9.67522 2.47733 9.55801L7.53566 4.49968C7.77974 4.2556 8.17547 4.2556 8.41954 4.49968C8.66362 4.74376 8.66362 5.13949 8.41954 5.38356L3.80315 9.99996L8.41954 14.6163C8.66362 14.8604 8.66362 15.2562 8.41954 15.5002Z' fill='%23224875'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.7109 9.99996C17.7109 10.3451 17.4311 10.625 17.0859 10.625H3.06094C2.71576 10.625 2.43594 10.3451 2.43594 9.99996C2.43594 9.65478 2.71576 9.37496 3.06094 9.37496H17.0859C17.4311 9.37496 17.7109 9.65478 17.7109 9.99996Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+
+.about_page_first .blue_color .breadcrums span a span,
+.about_page_first .blue_color .service_page_first__title,
+.about_page_first .blue_color .service_page_first__list li,
+.about_page_first .blue_color .service_page_first__btn--small {
+  color: #224875;
+}
+
+.about_page_first .blue_color .breadcrums__splash {
+  background: url("data:image/svg+xml,%3Csvg width='7' height='9' viewBox='0 0 7 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 3.63397C7.16667 4.01887 7.16667 4.98113 6.5 5.36603L2 7.9641C1.33333 8.349 0.5 7.86788 0.5 7.09808L0.5 1.90192C0.5 1.13212 1.33333 0.650998 2 1.0359L6.5 3.63397Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+
+.about_page_first .blue_color .service_page_first__btn--big {
+  background: #224875;
+  color: #fff;
+}
+
+.about_page_first .blue_color .service_page_first__btn--big:hover {
+  background: #fff;
+  color: #224875;
+}
+
+.about_page_first .blue_color .service_page_first__btn--small {
+  border-color: #224875;
+}
+
+.about_page_first__info {
+  max-width: 31.25vw;
+  width: 100%;
+}
+
+.about_page_first__title {
+  margin: 0;
+  color: var(--main-green, #7CC049);
+  font-size: 2.0833333333vw;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 1.5625vw;
+}
+
+.about_page_first__subtitle {
+  color: var(--txt-h, #0A0A3E);
+  font-size: 2.6041666667vw;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1.5625vw;
+}
+
+.about_page_first__text {
+  color: var(--txt-body, #28285C);
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .posts_page {
@@ -5551,6 +5606,17 @@ textarea {
   .spec_page .glide__arrows,
   .spec_page .glide__bullets {
     display: none;
+  }
+
+  .contact_page .submenu li a.isActive {
+    background: #224875;
+  }
+
+  .contact_page .submenu li a.isActive .contact_page__city,
+  .contact_page .submenu li a.isActive .contact_page__item,
+  .contact_page .submenu li a.isActive .contact_page__item span,
+  .contact_page .submenu li a.isActive .contact_page__item div {
+    color: #fff;
   }
 
   .post_page .glide__arrows,
@@ -7670,6 +7736,13 @@ textarea {
     padding: 30px 20px;
   }
 
+  .contact_page .map-block {
+    height: 300px !important;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   .contact_page__h1 {
     font-size: 36px;
     padding-bottom: 40px;
@@ -7681,9 +7754,17 @@ textarea {
 
   .contact_page__l-side {
     padding: 60px 20px;
+    padding-top: 30px;
     width: 100%;
     height: auto;
     overflow: unset;
+  }
+
+  .contact_page__r-side {
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
   }
 
   .contact_page .submenu {
@@ -7700,13 +7781,37 @@ textarea {
   }
 
   .contact_page .submenu li a {
+    position: relative;
+  }
+
+  .contact_page .submenu li a:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M9.29289 14.2929L1.70711 6.70711C1.07714 6.07714 1.52331 5 2.41421 5H17.5858C18.4767 5 18.9229 6.07714 18.2929 6.70711L10.7071 14.2929C10.3166 14.6834 9.68342 14.6834 9.29289 14.2929Z' fill='%23224875'/%3E%3C/svg%3E") 50% no-repeat;
+  }
+
+  .contact_page .submenu li a.isActive .contact_page__info {
+    display: block;
+  }
+
+  .contact_page .submenu li a.isActive:before {
+    transform: rotate(180deg);
+  }
+
+  .contact_page .submenu li a {
     padding: 0;
     padding-bottom: 0;
     border-radius: 0;
+    padding-top: 30px;
     background: none;
   }
 
   .contact_page__info {
+    display: none;
     padding: 30px 20px;
     border-radius: 10px;
     background: var(--main-blu, #224875);
@@ -7728,6 +7833,31 @@ textarea {
     font-size: 12px;
     margin-bottom: 10px;
     color: #fff;
+  }
+
+  .about_page_first {
+    padding-top: 25px;
+    padding-bottom: 60px;
+    background-position: 100% 100% !important;
+    min-height: unset;
+  }
+
+  .about_page_first__info {
+    max-width: 600px;
+  }
+
+  .about_page_first__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .about_page_first__subtitle {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .about_page_first__text {
+    font-size: 16px;
   }
 
   .posts_page {
@@ -8204,6 +8334,12 @@ textarea {
   .serv_why__block {
     width: 246px !important;
     margin-right: 20px;
+  }
+
+  .about_page_first {
+    padding-bottom: 272px;
+    background-size: 275px !important;
+    background-position: 50% 103% !important;
   }
 
   .posts_page__blocks {
