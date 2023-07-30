@@ -64,13 +64,9 @@
             }
         }
         &:hover {
-            background: #0E3461;
             .main_news__date, .main_news__tit {
                 color: #fff;
             }
-        }
-        &:active {
-            background: #00204D;
         }
     }
     &__blocks {

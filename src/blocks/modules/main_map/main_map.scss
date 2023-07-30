@@ -225,3 +225,57 @@
         }
     }
 }
+.main_map__trigger {
+    display: none;
+}
+@media all and (max-width: 1023px) {
+    .main_map__trigger {
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        right: 20px;
+        width: 20px;
+        height: 62px;
+        background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.29289 14.2929L1.70711 6.70711C1.07714 6.07714 1.52331 5 2.41421 5H17.5858C18.4767 5 18.9229 6.07714 18.2929 6.70711L10.7071 14.2929C10.3166 14.6834 9.68342 14.6834 9.29289 14.2929Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% / 20px no-repeat;
+    }
+    .submenu li:not(.isActive) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    }
+
+    .submenu li.isActive {
+        display: block;
+        pointer-events: none;
+        a {
+            padding-right: 40px;
+        }
+    }
+    .main_map__menu {
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 60px;
+        width: calc(100% - 40px);
+        .submenu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            right: 0;
+            background: #fff;
+            width: 100%;
+            &:before {
+                transform: rotate(180deg);
+            }
+        }
+        &.isShow {
+            li {
+                position: relative;
+                display: block !important;
+            }
+        }
+    }
+}

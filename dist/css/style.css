@@ -477,13 +477,6 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
   font-weight: 800;
 }
@@ -493,6 +486,20 @@
   font-display: swap;
   src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 @font-face {
@@ -512,15 +519,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
-  font-weight: 600;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 body {
@@ -647,6 +647,11 @@ textarea {
 
 .jq-selectbox li.selected {
   background: #224875;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
 }
 
 .header__top {
@@ -806,18 +811,39 @@ textarea {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
-  width: 10.4166666667vw;
-  padding: 1.0416666667vw;
+  width: 21.6145833333vw;
+  background: #fff;
+  padding: 2.0833333333vw;
+  padding-top: 4.5833333333vw;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.header__main-menu ul li.menu-item-has-children a {
+.header__main-menu ul li .sub-menu li a {
+  color: var(--main-blu, #224875);
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.64;
+}
+
+.header__main-menu ul li .sub-menu li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.header__main-menu ul li.menu-item-has-children {
+  position: relative;
+}
+
+.header__main-menu ul li.menu-item-has-children > a {
   padding-right: 0.9375vw;
   position: relative;
 }
 
-.header__main-menu ul li.menu-item-has-children a:before {
+.header__main-menu ul li.menu-item-has-children > a:before {
   content: "";
   position: absolute;
   width: 0.5208333333vw;
@@ -1507,6 +1533,12 @@ textarea {
 
 .main_spec .glide__bullets {
   bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main_spec .glide__bullet {
@@ -2173,6 +2205,12 @@ textarea {
 
 .main_news .glide__bullets {
   bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main_news .glide__bullet {
@@ -2274,17 +2312,9 @@ textarea {
   background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.583 4.49968C11.8271 4.2556 12.2229 4.2556 12.4669 4.49968L17.5253 9.55801C17.6425 9.67522 17.7083 9.83419 17.7083 9.99995C17.7083 10.1657 17.6425 10.3247 17.5253 10.4419L12.4669 15.5002C12.2229 15.7443 11.8271 15.7443 11.583 15.5002C11.339 15.2562 11.339 14.8604 11.583 14.6163L16.1994 9.99995L11.583 5.38356C11.339 5.13948 11.339 4.74376 11.583 4.49968Z' fill='%23224875'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.29166 9.99995C2.29166 9.65478 2.57148 9.37495 2.91666 9.37495H16.9417C17.2868 9.37495 17.5667 9.65478 17.5667 9.99995C17.5667 10.3451 17.2868 10.625 16.9417 10.625H2.91666C2.57148 10.625 2.29166 10.3451 2.29166 9.99995Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50%/100% no-repeat;
 }
 
-.main_post__more:hover {
-  background: #0E3461;
-}
-
 .main_post__more:hover .main_news__date,
 .main_post__more:hover .main_news__tit {
   color: #fff;
-}
-
-.main_post__more:active {
-  background: #00204D;
 }
 
 .main_post__blocks {
@@ -2524,6 +2554,10 @@ textarea {
 .main_map__r-side {
   width: 50%;
   height: auto;
+}
+
+.main_map__trigger {
+  display: none;
 }
 
 .service_page_first {
@@ -3452,6 +3486,12 @@ textarea {
 
 .news_page .glide__bullets {
   bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .news_page .glide__bullet {
@@ -3850,6 +3890,12 @@ textarea {
 
 .spec_page .glide__bullets {
   bottom: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .spec_page .glide__slides {
@@ -5319,6 +5365,12 @@ textarea {
 
 .post_page .glide__bullets {
   bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .post_page .glide__bullet {
@@ -5787,6 +5839,11 @@ textarea {
 }
 
 @media all and (min-width: 1023px) {
+  .header__main-menu ul li.menu-item-has-children:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .main_spec .glide__arrows,
   .main_spec .glide__bullets {
     display: none;
@@ -6853,6 +6910,60 @@ textarea {
     width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .main_map__trigger {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right: 20px;
+    width: 20px;
+    height: 62px;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.29289 14.2929L1.70711 6.70711C1.07714 6.07714 1.52331 5 2.41421 5H17.5858C18.4767 5 18.9229 6.07714 18.2929 6.70711L10.7071 14.2929C10.3166 14.6834 9.68342 14.6834 9.29289 14.2929Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50%/20px no-repeat;
+  }
+
+  .submenu li:not(.isActive) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .submenu li.isActive {
+    display: block;
+    pointer-events: none;
+  }
+
+  .submenu li.isActive a {
+    padding-right: 40px;
+  }
+
+  .main_map__menu {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 60px;
+    width: calc(100% - 40px);
+  }
+
+  .main_map__menu .submenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    right: 0;
+    background: #fff;
+    width: 100%;
+  }
+
+  .main_map__menu .submenu:before {
+    transform: rotate(180deg);
+  }
+
+  .main_map__menu.isShow li {
+    position: relative;
+    display: block !important;
   }
 
   .service_page_first.zaym_bg {
