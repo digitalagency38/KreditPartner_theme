@@ -96,3 +96,26 @@ textarea {
         }
     }
 }
+.jq-selectbox__select {
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: var(--dop-white, #FFF) !important;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
+    height: auto;
+    text-shadow: unset;
+    color: var(--txt-h, #0A0A3E);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.jq-selectbox__trigger {
+    border: 0;
+    right: 20px;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.29289 14.2929L1.70711 6.70711C1.07714 6.07714 1.52331 5 2.41421 5H17.5858C18.4767 5 18.9229 6.07714 18.2929 6.70711L10.7071 14.2929C10.3166 14.6834 9.68342 14.6834 9.29289 14.2929Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% / 20px no-repeat;
+}
+.jq-selectbox__trigger-arrow {
+    display: none;
+}
+.jq-selectbox li.selected {
+    background: #224875;
+}
