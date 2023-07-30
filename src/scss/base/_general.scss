@@ -70,12 +70,14 @@ textarea {
 
 /* Track */
 *::-webkit-scrollbar-track {
-    background: #0E3461;
+    background: #E4E4E4;
+    border-radius: 10px 0px 0px 10px;
 }
 
 /* Handle */
 *::-webkit-scrollbar-thumb {
     background: #224875;
+    border-radius: 10px;
 }
 
 /* Handle on hover */
