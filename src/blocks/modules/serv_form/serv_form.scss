@@ -131,6 +131,8 @@
             background: var(--dop-white, #FFF);
             @media all and (max-width: 1023px) {
                 max-width: 536px;
+                margin-left: auto;
+                margin-right: auto;
                 padding: 30px 20px;
             }
         }
@@ -159,5 +161,75 @@
             font-size: 14px;
             margin-bottom: 20px;
         }
+    }
+    &__politic {
+        margin-top: vw(20);
+        color: var(--txt-body, #c4c4c4);
+        font-size: vw(12);
+        font-style: normal;
+        font-weight: 500;
+        a {
+            text-decoration: none;
+            display: block;
+            color: var(--txt-body, #28285C);
+        }
+        @media all and (max-width: 1023px) {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+}
+form {
+    p {
+        margin: 0;
+    }
+    input[type="text"], input[type="tel"] { 
+        width: 100%;
+        display: block;
+        padding: vw(18) vw(30);
+        border-radius: 10px;
+        background: var(--dop-lite-grey, #F9F9F9);
+        color: var(--txt-body, #28285C);
+        font-size: vw(12);
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 10px;
+        border: 1px solid transparent;
+        &::placeholder {
+            color: #c4c4c4;
+        }
+        &:focus {
+            border-color: var(--main-blu, #224875);
+        }
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+            padding: 18px 30px;
+        }
+    }
+    input[type="submit"] {
+        color: var(--dop-white, #FFF);
+        font-size: vw(16);
+        text-align: center;
+        font-style: normal;
+        border: 0;
+        font-weight: 600;
+        line-height: normal;
+        width: 100%;
+        cursor: pointer;
+        display: block;
+        padding: vw(17) vw(20);
+        border-radius: 10px;
+        background: var(--main-blu, #224875);
+        &:hover {
+            background: #00204D;
+        }
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+            padding: 17px 20px;
+            font-size: 16px;
+        }
+    }
+    .wpcf7-spinner {
+        display: none !important;
     }
 }

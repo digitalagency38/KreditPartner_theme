@@ -477,8 +477,15 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
-  font-weight: 800;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 @font-face {
@@ -491,22 +498,15 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
+  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
   font-weight: 600;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
 }
 
 @font-face {
@@ -519,8 +519,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
+  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 body {
@@ -624,6 +624,7 @@ textarea {
 
 .jq-selectbox__select {
   padding: 13px 20px;
+  padding-right: 50px;
   border-radius: 10px;
   background: var(--dop-white, #FFF) !important;
   box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
@@ -4159,6 +4160,77 @@ textarea {
   margin-bottom: 2.0833333333vw;
 }
 
+.serv_form__politic {
+  margin-top: 1.0416666667vw;
+  color: var(--txt-body, #c4c4c4);
+  font-size: 0.625vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.serv_form__politic a {
+  text-decoration: none;
+  display: block;
+  color: var(--txt-body, #28285C);
+}
+
+form p {
+  margin: 0;
+}
+
+form input[type=text],
+form input[type=tel] {
+  width: 100%;
+  display: block;
+  padding: 0.9375vw 1.5625vw;
+  border-radius: 10px;
+  background: var(--dop-lite-grey, #F9F9F9);
+  color: var(--txt-body, #28285C);
+  font-size: 0.625vw;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+}
+
+form input[type=text]::-moz-placeholder, form input[type=tel]::-moz-placeholder {
+  color: #c4c4c4;
+}
+
+form input[type=text]::placeholder,
+form input[type=tel]::placeholder {
+  color: #c4c4c4;
+}
+
+form input[type=text]:focus,
+form input[type=tel]:focus {
+  border-color: var(--main-blu, #224875);
+}
+
+form input[type=submit] {
+  color: var(--dop-white, #FFF);
+  font-size: 0.8333333333vw;
+  text-align: center;
+  font-style: normal;
+  border: 0;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  padding: 0.8854166667vw 1.0416666667vw;
+  border-radius: 10px;
+  background: var(--main-blu, #224875);
+}
+
+form input[type=submit]:hover {
+  background: #00204D;
+}
+
+form .wpcf7-spinner {
+  display: none !important;
+}
+
 .serv_seo {
   padding-top: 8.3333333333vw;
   padding-bottom: 8.3333333333vw;
@@ -4715,10 +4787,103 @@ textarea {
   background: var(--dop-white, #FFF);
 }
 
+#raschet {
+  padding: 2.0833333333vw;
+  border-radius: 10px;
+  background: var(--dop-white, #FFF);
+}
+
+#raschet p {
+  margin: 0;
+}
+
+#raschet .calc-item {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #224875;
+}
+
+#raschet .calc-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+#raschet .calc-name {
+  color: var(--txt-h, #0A0A3E);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#raschet .calc-summa {
+  border-radius: 5px;
+  background: var(--dop-lite-grey, #F9F9F9);
+  padding: 18px 20px;
+  color: var(--txt-body, #28285C);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  min-width: 150px;
+}
+
+#raschet .calc-tickmarks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#raschet .calc-tickmarks__title {
+  color: var(--txt-body, #28285C);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#raschet .calc-summary__title {
+  padding-bottom: 40px;
+  color: var(--txt-h, #0A0A3E);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#raschet .calc-form {
+  width: 13.5416666667vw;
+}
+
+#raschet .calc-form__title {
+  margin-top: 3.90625vw;
+  margin-bottom: 1.0416666667vw;
+  color: var(--txt-body, #28285C);
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#raschet .calc-form__btn a {
+  padding: 0.8333333333vw 1.0416666667vw;
+  border-radius: 10px;
+  background: var(--main-blu, #224875);
+  color: var(--dop-white, #FFF);
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#raschet .calc-form__btn a:hover {
+  background: #00204D;
+}
+
 .progress {
   display: block;
   overflow: visible;
-  background: linear-gradient(to right, #239E61 0%, #239E61 50%, #F0F0F0 40%, #F0F0F0 100%);
+  background: linear-gradient(to right, #7CC049 0%, #7CC049 50%, #F9F9F9 40%, #F9F9F9 100%);
   width: 100%;
   height: 10px;
   outline: none;
@@ -4737,37 +4902,29 @@ textarea {
 }
 
 .progress::-webkit-slider-thumb {
-  width: 30px;
-  height: 30px;
-  background: #E7E7E7;
-  border: 12px solid #FFFFFF;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Ccircle cx='12.6035' cy='12' r='12' fill='%237CC049'/%3E%3Ccircle cx='12.6035' cy='12' r='5' stroke='white' stroke-width='3'/%3E%3C/svg%3E") 50%/100% no-repeat;
   border-radius: 50%;
   cursor: pointer;
   -webkit-appearance: none;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 
 .progress-mes {
-  background: linear-gradient(to right, #239E61 0%, #239E61 20%, #F0F0F0 10%, #F0F0F0 100%);
+  background: linear-gradient(to right, #7CC049 0%, #7CC049 20%, #F9F9F9 10%, #F9F9F9 100%);
   width: 100%;
-  height: 10px;
+  height: 4px;
   outline: none;
-  border-radius: 20px;
-  box-shadow: inset 0px 7px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 200px;
+  background: var(--dop-lite-grey, #F9F9F9);
   transition: background 450ms ease-in;
   -webkit-appearance: none;
 }
 
 .progress-mes::-webkit-slider-thumb {
-  width: 30px;
-  height: 30px;
-  background: #E7E7E7;
-  border: 12px solid #FFFFFF;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Ccircle cx='12.6035' cy='12' r='12' fill='%237CC049'/%3E%3Ccircle cx='12.6035' cy='12' r='5' stroke='white' stroke-width='3'/%3E%3C/svg%3E") 50%/100% no-repeat;
   border-radius: 50%;
   cursor: pointer;
   -webkit-appearance: none;
@@ -7710,6 +7867,8 @@ textarea {
 
   .serv_form__r-side form {
     max-width: 536px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px 20px;
   }
 
@@ -7721,6 +7880,23 @@ textarea {
   .serv_form__subtit {
     font-size: 14px;
     margin-bottom: 20px;
+  }
+
+  .serv_form__politic {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  form input[type=text],
+  form input[type=tel] {
+    font-size: 12px;
+    padding: 18px 30px;
+  }
+
+  form input[type=submit] {
+    font-size: 12px;
+    padding: 17px 20px;
+    font-size: 16px;
   }
 
   .serv_seo {

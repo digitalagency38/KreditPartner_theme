@@ -54,10 +54,90 @@
         }
     }
 }
+#raschet {
+    padding: vw(40);
+    border-radius: 10px;
+    background: var(--dop-white, #FFF);
+    p {
+        margin: 0;
+    }
+    .calc-item {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #224875;
+    }
+    .calc-row {
+        display: flex;
+        justify-content: space-between;    
+        margin-bottom: 25px;
+        align-items: center;
+    }
+    .calc-name {
+        color: var(--txt-h, #0A0A3E);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .calc-summa {
+        border-radius: 5px;
+        background: var(--dop-lite-grey, #F9F9F9);
+        padding: 18px 20px;
+        color: var(--txt-body, #28285C);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        min-width: 150px;
+    }
+    .calc-tickmarks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .calc-tickmarks__title {
+        color: var(--txt-body, #28285C);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .calc-summary__title {
+        padding-bottom: 40px;
+        color: var(--txt-h, #0A0A3E);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .calc-form {
+        width: vw(260);
+    }
+    .calc-form__title {
+        margin-top: vw(75);
+        margin-bottom: vw(20);
+        color: var(--txt-body, #28285C);
+        font-size: vw(30);
+        font-style: normal;
+        font-weight: 600;
+    }
+    .calc-form__btn a {
+        padding: vw(16) vw(20);
+        border-radius: 10px;
+        background: var(--main-blu, #224875);
+        color: var(--dop-white, #FFF);
+        font-size: vw(16);
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        font-weight: 600;
+        &:hover {
+            background: #00204D;
+        }
+    }
+}
 .progress {
     display: block;
     overflow: visible;
-    background: linear-gradient(to right, #239E61 0%, #239E61 50%, #F0F0F0 40%, #F0F0F0 100%);
+    background: linear-gradient(to right, #7CC049 0%, #7CC049 50%, #F9F9F9 40%, #F9F9F9 100%);
     width: 100%;
     height: 10px;
     outline: none;
@@ -75,35 +155,27 @@
     -o-transition: background 450ms ease-in;
   }
   .progress::-webkit-slider-thumb {
-    width: 30px;
-    height: 30px;
-    background: #E7E7E7;
-    border: 12px solid #FFFFFF;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+    width: 24px;
+    height: 24px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Ccircle cx='12.6035' cy='12' r='12' fill='%237CC049'/%3E%3Ccircle cx='12.6035' cy='12' r='5' stroke='white' stroke-width='3'/%3E%3C/svg%3E") 50% / 100% no-repeat;
     border-radius: 50%;
     cursor: pointer;
     -webkit-appearance: none;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
   }
   .progress-mes {
-    background: linear-gradient(to right, #239E61 0%, #239E61 20%, #F0F0F0 10%, #F0F0F0 100%);
+    background: linear-gradient(to right, #7CC049 0%, #7CC049 20%, #F9F9F9 10%, #F9F9F9 100%);
     width: 100%;
-    height: 10px;
+    height: 4px;
     outline: none;
-    border-radius: 20px;
-    box-shadow: inset 0px 7px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 200px;
+    background: var(--dop-lite-grey, #F9F9F9);
     transition: background 450ms ease-in;
     -webkit-appearance: none;
   }
   .progress-mes::-webkit-slider-thumb {
-    width: 30px;
-    height: 30px;
-    background: #E7E7E7;
-    border: 12px solid #FFFFFF;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+    width: 24px;
+    height: 24px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Ccircle cx='12.6035' cy='12' r='12' fill='%237CC049'/%3E%3Ccircle cx='12.6035' cy='12' r='5' stroke='white' stroke-width='3'/%3E%3C/svg%3E") 50% / 100% no-repeat;
     border-radius: 50%;
     cursor: pointer;
     -webkit-appearance: none;
