@@ -477,15 +477,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
+  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
+  font-weight: 800;
 }
 
 @font-face {
@@ -498,13 +491,6 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
   font-weight: 600;
 }
@@ -512,15 +498,29 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
-  font-weight: 100;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
 }
 
 body {
@@ -2620,10 +2620,10 @@ textarea {
 .service_page_first__item--text:before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 0.3645833333vw;
   left: 0;
-  width: 10px;
-  height: 10px;
+  width: 0.5208333333vw;
+  height: 0.5208333333vw;
   border-radius: 50%;
   background: #7CC049;
 }
@@ -4798,21 +4798,21 @@ form .wpcf7-spinner {
 }
 
 #raschet .calc-item {
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 2.0833333333vw;
+  margin-bottom: 2.0833333333vw;
   border-bottom: 1px solid #224875;
 }
 
 #raschet .calc-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 1.3020833333vw;
   align-items: center;
 }
 
 #raschet .calc-name {
   color: var(--txt-h, #0A0A3E);
-  font-size: 24px;
+  font-size: 1.25vw;
   font-style: normal;
   font-weight: 600;
 }
@@ -4820,32 +4820,32 @@ form .wpcf7-spinner {
 #raschet .calc-summa {
   border-radius: 5px;
   background: var(--dop-lite-grey, #F9F9F9);
-  padding: 18px 20px;
+  padding: 0.9375vw 1.0416666667vw;
   color: var(--txt-body, #28285C);
-  font-size: 18px;
+  font-size: 0.9375vw;
   font-style: normal;
   font-weight: 500;
-  min-width: 150px;
+  min-width: 7.8125vw;
 }
 
 #raschet .calc-tickmarks {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.0416666667vw;
 }
 
 #raschet .calc-tickmarks__title {
   color: var(--txt-body, #28285C);
-  font-size: 16px;
+  font-size: 0.8333333333vw;
   font-style: normal;
   font-weight: 500;
 }
 
 #raschet .calc-summary__title {
-  padding-bottom: 40px;
+  padding-bottom: 2.0833333333vw;
   color: var(--txt-h, #0A0A3E);
-  font-size: 24px;
+  font-size: 1.25vw;
   font-style: normal;
   font-weight: 600;
 }
@@ -4880,25 +4880,48 @@ form .wpcf7-spinner {
   background: #00204D;
 }
 
+#raschet .calc-summary__items {
+  display: flex;
+}
+
+#raschet .calc-summary__item {
+  min-width: 8.3333333333vw;
+}
+
+#raschet .calc-summary__item:first-child {
+  margin-right: 6.7708333333vw;
+}
+
+#raschet .calc-summary__item span {
+  color: var(--main-green, #7CC049);
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0.8333333333vw;
+  display: flex;
+}
+
+#raschet .calc-summary__item span span {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+#raschet .calc-summary__item .calc-summary__name {
+  color: var(--txt-body, #28285C);
+  font-size: 0.7291666667vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
 .progress {
-  display: block;
-  overflow: visible;
-  background: linear-gradient(to right, #7CC049 0%, #7CC049 50%, #F9F9F9 40%, #F9F9F9 100%);
+  background: linear-gradient(to right, #7CC049 0%, #7CC049 20%, #F9F9F9 10%, #F9F9F9 100%);
   width: 100%;
-  height: 10px;
+  height: 4px;
   outline: none;
-  border-radius: 20px;
-  box-shadow: inset 0px 7px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 200px;
+  background: var(--dop-lite-grey, #F9F9F9);
   transition: background 450ms ease-in;
   -webkit-appearance: none;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  -webkit-transition: background 450ms ease-in;
-  -moz-transition: background 450ms ease-in;
-  -ms-transition: background 450ms ease-in;
-  -o-transition: background 450ms ease-in;
 }
 
 .progress::-webkit-slider-thumb {
@@ -7154,6 +7177,12 @@ form .wpcf7-spinner {
     font-size: 30px;
   }
 
+  .service_page_first__item--text:before {
+    top: 7px;
+    width: 10px;
+    height: 10px;
+  }
+
   .service_page_first__item--text {
     padding-bottom: 20px;
     font-size: 18px;
@@ -7180,6 +7209,8 @@ form .wpcf7-spinner {
 
   .service_page_first__buttons {
     padding-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .service_page_first__btn--big {
@@ -8227,6 +8258,82 @@ form .wpcf7-spinner {
     padding: 30px 20px;
   }
 
+  #raschet {
+    padding: 30px 20px;
+  }
+
+  #raschet .calc-item {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  #raschet .calc-row {
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #raschet .calc-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  #raschet .calc-summa {
+    padding: 13px 20px;
+    min-width: 150px;
+    font-size: 18px;
+  }
+
+  #raschet .calc-tickmarks {
+    margin-top: 20px;
+  }
+
+  #raschet .calc-tickmarks__title {
+    font-size: 12px;
+  }
+
+  #raschet .calc-summary__title {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  #raschet .calc-form {
+    width: 100%;
+  }
+
+  #raschet .calc-form__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  #raschet .calc-form__btn a {
+    font-size: 16px;
+    padding: 16px 10px;
+  }
+
+  #raschet .calc-summary__items {
+    flex-direction: column;
+  }
+
+  #raschet .calc-summary__item:first-child {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  #raschet .calc-summary__item {
+    width: 100%;
+  }
+
+  #raschet .calc-summary__item span {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #raschet .calc-summary__item .calc-summary__name {
+    font-size: 14px;
+  }
+
   .contact_page .map-block {
     height: 300px !important;
     border-radius: 10px;
@@ -8983,6 +9090,10 @@ form .wpcf7-spinner {
 }
 
 @media all and (max-width: 620px) {
+  .service_page_first__buttons {
+    align-items: center;
+  }
+
   .newss_page__blocks {
     margin-left: 0;
     margin-right: 0;

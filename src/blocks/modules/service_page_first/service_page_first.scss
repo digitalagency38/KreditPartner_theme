@@ -82,12 +82,17 @@
             &:before {
                 content: '';
                 position: absolute;
-                top: 7px;
+                top: vw(7);
                 left: 0;
-                width: 10px;
-                height: 10px;
+                width: vw(10);
+                height: vw(10);
                 border-radius: 50%;
                 background: #7CC049;
+                @media all and (max-width: 1023px) {
+                    top: 7px;
+                    width: 10px;
+                    height: 10px;
+                }
                 @media all and (max-width: 580px) {
                     display: none;
                 }
@@ -148,6 +153,11 @@
         flex-wrap: wrap;
         @media all and (max-width: 1023px) {
             padding-top: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @media all and (max-width: 620px) {
+            align-items: center;
         }
     }
     &__btn {
