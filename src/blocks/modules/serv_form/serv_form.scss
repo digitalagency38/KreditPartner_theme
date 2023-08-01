@@ -196,7 +196,7 @@ form {
         margin-bottom: 10px;
         border: 1px solid transparent;
         &::placeholder {
-            color: #c4c4c4;
+            color: transparent;
         }
         &:focus {
             border-color: var(--main-blu, #224875);

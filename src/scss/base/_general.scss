@@ -30,7 +30,6 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: inherit;
 }
 
 .content {
@@ -95,6 +94,9 @@ textarea {
             background: #F9F9F9;
         }
     }
+    form input[type=text], form input[type=tel] {
+        background: #fff;
+    }
 }
 .jq-selectbox__select {
     padding: 13px 20px;
@@ -119,4 +121,67 @@ textarea {
 }
 .jq-selectbox li.selected {
     background: #224875;
+}
+
+.text-field_floating {
+position: relative;
+}
+
+
+.text-field_floating .text-field__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: vw(18) vw(30);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+    color: var(--txt-body, #28285C);
+    font-size: vw(12);
+    font-style: normal;
+    font-weight: 600;
+    @media all and (max-width: 1023px) {
+        font-size: 12px;
+        padding: 18px 30px;
+    }
+}
+
+.text-field_floating .wpcf7-form-control::-moz-placeholder {
+color: transparent;
+}
+
+.text-field_floating .wpcf7-form-control::placeholder {
+color: transparent;
+}
+
+
+.text-field_floating .wpcf7-form-control:focus~.text-field__label,
+.text-field_floating .wpcf7-form-control:not(:placeholder-shown)~.text-field__label {
+opacity: .65;
+transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+}
+.wpcf7-not-valid {
+    background: #FCE0D2 !important;
+    color: #C22 !important;
+    ~ .wpcf7-not-valid-tip {
+        position: absolute;
+        right: 20px;
+        bottom: 5px;
+        font-size: vw(12);
+        color: #C22;
+        opacity: .4;
+        font-style: normal;
+        font-weight: 500;
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+        }
+    }
+    ~.text-field__label {
+        color: #C22;
+        opacity: .4;
+    }
 }

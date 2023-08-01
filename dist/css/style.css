@@ -484,8 +484,29 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
@@ -500,27 +521,6 @@
   font-display: swap;
   src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
   font-weight: 100;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
 }
 
 body {
@@ -558,7 +558,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: inherit;
 }
 
 .content {
@@ -622,6 +621,11 @@ textarea {
   background: #F9F9F9;
 }
 
+.block_white form input[type=text],
+.block_white form input[type=tel] {
+  background: #fff;
+}
+
 .jq-selectbox__select {
   padding: 13px 20px;
   padding-right: 50px;
@@ -648,6 +652,68 @@ textarea {
 
 .jq-selectbox li.selected {
   background: #224875;
+}
+
+.text-field_floating {
+  position: relative;
+}
+
+.text-field_floating .text-field__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0.9375vw 1.5625vw;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  color: var(--txt-body, #28285C);
+  font-size: 0.625vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.text-field_floating .wpcf7-form-control::-moz-placeholder {
+  color: transparent;
+}
+
+.text-field_floating .wpcf7-form-control::placeholder {
+  color: transparent;
+}
+
+.text-field_floating .wpcf7-form-control:not(:-moz-placeholder-shown) ~ .text-field__label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.75rem) translateX(0.15rem);
+}
+
+.text-field_floating .wpcf7-form-control:focus ~ .text-field__label,
+.text-field_floating .wpcf7-form-control:not(:placeholder-shown) ~ .text-field__label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.75rem) translateX(0.15rem);
+}
+
+.wpcf7-not-valid {
+  background: #FCE0D2 !important;
+  color: #C22 !important;
+}
+
+.wpcf7-not-valid ~ .wpcf7-not-valid-tip {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  font-size: 0.625vw;
+  color: #C22;
+  opacity: 0.4;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.wpcf7-not-valid ~ .text-field__label {
+  color: #C22;
+  opacity: 0.4;
 }
 
 .header {
@@ -960,9 +1026,6 @@ textarea {
   top: 0;
   height: 100%;
   background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .header__burger.isOpened .header__burger--body {
@@ -997,14 +1060,46 @@ textarea {
   padding-top: 0.15625vw;
   padding-bottom: 0.15625vw;
   border-bottom: 1px solid transparent;
+  display: block;
 }
 
 .header__burger--main-menu ul li a:hover {
   border-color: #224875;
 }
 
-.header__burger--main-menu .sub-menu {
-  display: none;
+.header__burger--main-menu ul li.menu-item-has-children > a {
+  position: relative;
+}
+
+.header__burger--main-menu ul li.menu-item-has-children > a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  background: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.29289 7.29289L1.70711 4.70711C1.07714 4.07714 1.52331 3 2.41421 3H7.58579C8.47669 3 8.92286 4.07714 8.2929 4.70711L5.70711 7.29289C5.31658 7.68342 4.68342 7.68342 4.29289 7.29289Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+
+.header__burger--main-menu ul li.menu-item-has-children ul li.menu-item a {
+  text-decoration: none;
+  color: var(--main-blu, #224875);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.5;
+  padding-top: 0.15625vw;
+  padding-bottom: 0.15625vw;
+  border-bottom: 1px solid transparent;
+}
+
+.header__burger--main-menu ul li.menu-item-has-children ul li.menu-item a:hover {
+  border-color: #224875;
+}
+
+.header__burger--main-menu ul li.menu-item-has-children ul li.menu-item a:active {
+  opacity: 1;
 }
 
 .header__burger--menu {
@@ -1109,6 +1204,33 @@ textarea {
 
 .header__burger--socs a:active {
   background: #00204D;
+}
+
+.waSlideMenu-wrapper.closed {
+  left: 0 !important;
+}
+
+.waSlideMenu-back {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.waSlideMenu-back a {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.waSlideMenu-back a:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  left: 0;
+  top: 50%;
+  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.41686 15.5002C8.17278 15.7443 7.77705 15.7443 7.53298 15.5002L2.47464 10.4419C2.35743 10.3247 2.29158 10.1657 2.29158 9.99996C2.29158 9.83419 2.35743 9.67522 2.47464 9.55801L7.53298 4.49968C7.77705 4.2556 8.17278 4.2556 8.41686 4.49968C8.66094 4.74376 8.66094 5.13949 8.41686 5.38356L3.80047 9.99996L8.41686 14.6163C8.66094 14.8604 8.66094 15.2562 8.41686 15.5002Z' fill='%23224875'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.7083 9.99996C17.7083 10.3451 17.4284 10.625 17.0833 10.625H3.05825C2.71307 10.625 2.43325 10.3451 2.43325 9.99996C2.43325 9.65478 2.71307 9.37496 3.05825 9.37496H17.0833C17.4284 9.37496 17.7083 9.65478 17.7083 9.99996Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% no-repeat;
 }
 
 .breadcrums {
@@ -4194,12 +4316,12 @@ form input[type=tel] {
 }
 
 form input[type=text]::-moz-placeholder, form input[type=tel]::-moz-placeholder {
-  color: #c4c4c4;
+  color: transparent;
 }
 
 form input[type=text]::placeholder,
 form input[type=tel]::placeholder {
-  color: #c4c4c4;
+  color: transparent;
 }
 
 form input[type=text]:focus,
@@ -6233,6 +6355,15 @@ form .wpcf7-spinner {
     max-width: 1440px;
   }
 
+  .text-field_floating .text-field__label {
+    font-size: 12px;
+    padding: 18px 30px;
+  }
+
+  .wpcf7-not-valid ~ .wpcf7-not-valid-tip {
+    font-size: 12px;
+  }
+
   .header__top {
     padding: 30px 20px;
     width: 100%;
@@ -6328,6 +6459,11 @@ form .wpcf7-spinner {
   }
 
   .header__burger--main-menu ul li a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .header__burger--main-menu ul li.menu-item-has-children ul li.menu-item a {
     padding-top: 3px;
     padding-bottom: 3px;
   }
