@@ -1,154 +1,70 @@
-# gulp-builder
+[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-## :zap: Установка
-* установите [NodeJS](https://nodejs.org/en/) ***lts*** (на момент создания сборщика v16.13.2)
-* скачайте сборку в консоли с помощью [Git](https://git-scm.com/downloads): ```git clone git@bitbucket.org:osminozhka/gulp-builder.git #имя_проекта```
-* перейдите в скачанную папку со сборкой: ```cd #имя_проекта```
-* скачайте необходимые зависимости: ```npm install```
-* чтобы начать работу, введите команду: ```npm run dev``` (режим разработки)
-* чтобы собрать проект, введите команду ```npm run build``` (режим сборки)
+_s
+===
 
-Если вы всё сделали правильно, у вас должен открыться браузер с локальным сервером.
+Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
-## :open_file_folder: Файловая структура
+My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
-```
-gulp-html-starter
-├── dist
-├── src
-│   ├── blocks
-│   ├── files
-│   ├── fonts
-│   ├── img
-│   ├── js
-│   ├── scss
-├── .env_example
-├── package.json
-├── gulpfile.js
-└── .gitignore
-```
+* A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience.
+* A just right amount of lean, well-commented, modern, HTML5 templates.
+* A custom header implementation in `inc/custom-header.php`. Just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
+* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
+* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
+* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
+* 2 sample layouts in `sass/layouts/` made using CSS Grid for a sidebar on either side of your content. Just uncomment the layout of your choice in `sass/style.scss`.
+Note: `.no-sidebar` styles are automatically loaded.
+* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
+* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
+* Licensed under GPLv2 or later. :) Use it to make something cool.
 
-* Корень папки:
-    * ```.gitignore``` – запрет на отслеживание файлов Git'ом
-    * ```.env_example``` – стартовый шаблон для переменных среды
-    * ```gulpfile.js``` — настройки Gulp
-    * ```package.json``` — список зависимостей
-* Папка ```src``` - используется во время разработки:
-    * БЭМ-блоки и компоненты: ```src/blocks```
-    * Остальные файлы: ```src/files```
-    * шрифты: ```src/fonts```
-    * изображения: ```src/img```
-    * JS-файлы: ```src/js```
-    * SCSS-файлы: ```src/scss```
-    * SVG иконки для генерации спрайта: ```src/svgicons```
-* Папка ```dist``` - папка, из которой запускается локальный сервер для разработки (при запуске ```npm run dev```)
-* Папка ```gulp``` - папка с Gulp-тасками и настройками
+Installation
+---------------
 
-## :keyboard: Команды
-* ```npm run dev``` - запуск сервера для разработки проекта
-* ```npm run build``` - собрать проект с оптимизацией без запуска сервера
+### Requirements
 
-## :green_book: Переменные среды
-* В корне папки с проектом есть файл ```.env.example```, для использования переменных среды нужно переименовать его в ```.env```.
-    * ```PORT``` - переменная для переопределения порта для запуска локального сервера. Пример использования: ```PORT=3000```.
-    * ```NGROK_AUTHKEY``` - переменная для ключа доступа [NGROK](https://ngrok.com/)
+`_s` requires the following dependencies:
 
-## :bulb: Рекомендации по использованию
-### Компонентный подход к разработке сайтов
-* каждый БЭМ-блок имеет свою папку внутри ```src/blocks/modules```
-* папка одного БЭМ-блока содержит в себе один html-файл, один SCSS-файл и один JS-файл (если у блока используется скрипт)
-    * html-файл блока импортируется в файл ```src/views/index.html``` (или в необходимый файл страницы, откуда будет вызываться блок)
-    * SCSS-файл блока импортируется в файл ```src/blocks/modules/_modules.scss```
-    * JS-файл блока импортируется в ```src/js/import/modules.js```
+- [Node.js](https://nodejs.org/)
+- [Composer](https://getcomposer.org/)
 
-Пример структуры папки с БЭМ-блоком:
-```
-blocks
-├── modules
-│   ├── header
-│   │   ├── header.html
-│   │   ├── header.js
-│   │   ├── header.scss
+### Quick Start
+
+Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace on the name in all the templates.
+
+1. Search for `'_s'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
+2. Search for `_s_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
+3. Search for `Text Domain: _s` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
+4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
+5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
+6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
+
+Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+
+### Setup
+
+To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
+
+```sh
+$ composer install
+$ npm install
 ```
 
-### Компоненты
-* компоненты (например, иконки, кнопки) оформляются в html с помощью примесей
-* каждый компонент имеет свою папку внутри ```src/blocks/components```
-* папка одного компонента содержит в себе один html-файл, один SCSS-файл и один JS-файл (если у компонента используется скрипт)
-    * html-файл компонента импортируется в файл главной страницы ```src/index.html``` (или в необходимый файл страницы, откуда будет вызываться компонент)
-    * SCSS-файл компонента импортируется в файл ```src/blocks/components/_components.scss```
-    * JS-файл компонента импортируется в файл ```src/js/import/components.js```
+### Available CLI commands
 
-### Страницы проекта
-* страницы проекта находятся в корне папки ```src/```
-    * главная страница: ```src/views/index.html```
+`_s` comes packed with CLI commands tailored for WordPress theme development :
 
-### Шрифты
-* шрифты находятся в папке ```src/fonts```
-    * шрифты автоматически подключаются в файл ```src/styles/base/_fonts.scss```
-    * шрифты форматов ```{*.otf}``` автоматически конвертируются в формат ```{*.ttf}``` в папку с шрифтами ```src/fonts```
-    * шрифты форматов ```{*.ttf}``` автоматически конвертируются в формат ```{*.woff, *.woff2}``` в папку с шрифтами в сборке ```dist/fonts```
+- `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
+- `composer lint:php` : checks all PHP files for syntax errors.
+- `composer make-pot` : generates a .pot file in the `languages/` directory.
+- `npm run compile:css` : compiles SASS files to css.
+- `npm run compile:rtl` : generates an RTL stylesheet.
+- `npm run watch` : watches all SASS files and recompiles them to css when they change.
+- `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
+- `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
+- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
 
-### Изображения
-* изображения находятся в папке ```src/img```
-    * изображения автоматически конвертируются в формат ```.webp```.
-    * изображения подключенные как ```<img src="@img/download.png" width="100" alt="">``` автоматически превращаются в ```<picture><source srcset="img/download.webp" type="image/webp"><img src="img/download.png" width="100" alt=""></picture>```.
+Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
-### Сторонние библиотеки
-* все сторонние библиотеки устанавливаются в папку ```node_modules```
-* для их загрузки воспользуйтеcь командой ```npm install package_name```
-* для подключения JS-файлов библиотек импортируйте их в самом начале JS-файла БЭМ-блока (то есть тот БЭМ-блок, который использует скрипт), например:
-```javascript
-import $ from "jquery";
-```
-* для подключения стилевых файлов библиотек импортируйте их в файл ```src/styles/vendor/_libs.scss```
-* JS-файлы и стилевые файлы библиотек самостоятельно изменять нельзя
-
-
-### Подсказки путей в VSCode
-* Установить расширение ``` Path Autocomplete ``` 
-* Нажать ``` ctrl+shift+p ``` и набрать:
-* Анг: ``` Preferences: Open Settings (JSON) ``` Рус: ``` Параметры: Открыть параметры (JSON) ```
-* Добавить к настройкам:
-```
-"path-autocomplete.pathMappings": {
-    "@img": "${folder}/src/img",
-    "@js": "${folder}/dist/js",
-    "@scss": "${folder}/src/scss",
-    "@css": "${folder}/dist/css",
-}
-```
-* Должно быть что то вроде:
-```
-{
-    // ВАШИ НАСТРОЙКИ,
-    // ВАШИ НАСТРОЙКИ,
-    // ВАШИ НАСТРОЙКИ,
-    // ВАШИ НАСТРОЙКИ,
-    // ВАШИ НАСТРОЙКИ,
-    "path-autocomplete.pathMappings": {
-        "@img": "${folder}/src/img",
-        "@js": "${folder}/dist/js",
-        "@scss": "${folder}/src/scss",
-        "@css": "${folder}/dist/css",
-    }
-}
-```
-
-
-## :open_file_folder: Утилиты
-
-### Всплывающие окна
-* Чтобы сделать всплывающее окно нужно:
-* Кнопке добавить ``` data-modal="КАКОЙ_ТО_ИДЕНТИФИКАТОР" ```
-* К обертке всплывающего окна добавить ``` data-modal-id="КАКОЙ_ТО_ИДЕНТИФИКАТОР" ```
-* При клике на кнопку будет добавляться класс ``` isOpened ``` к обертке всплывающего окна
-* Изменить data атрибуты и класс можно в файле ``` src/js/app.js ```
-
-```
-modals: new Modals({
-    modalsSelector: "data-modal", // data атрибут для кнопки
-    modalsOpenerSelector: "data-modal-id", // data атрибут для всплывающего окна
-    openedClass: "isOpened" // класс для добавления
-})
-```
+Good luck!
