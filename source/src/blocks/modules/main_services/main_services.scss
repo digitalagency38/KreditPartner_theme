@@ -122,8 +122,23 @@
             font-size: vw(17);
             font-style: normal;
             font-weight: 500;
-            text-decoration-line: underline;
             margin-bottom: vw(20);
+            a {
+                color: var(--dop-white, #FFF);
+                font-size: vw(17);
+                font-style: normal;
+                font-weight: 500;
+                display: inline-block;
+                text-decoration: none;
+                padding: 2px 0;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    border-color: #fff;
+                }
+                @media all and (max-width: 1023px) {
+                    font-size: 15px;
+                }
+            }
             @media all and (max-width: 1023px) {
                 font-size: 15px;
                 margin-bottom: 20px;
@@ -133,7 +148,7 @@
     &__more {
         margin-top: auto;
         padding: vw(9) 0;
-        border-bottom: 1px solid var(--dop-white, #FFF);
+        border-bottom: 1px solid transparent;
         text-decoration: none;
         display: inline-block;
         color: var(--dop-white, #FFF);
@@ -143,6 +158,9 @@
         @media all and (max-width: 1023px) {
             font-size: 16px;
             padding: 9px 0;
+        }
+        &:hover {
+            border-color: #fff;
         }
     }
     &__flag {

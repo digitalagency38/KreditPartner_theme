@@ -477,8 +477,22 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
   font-weight: 800;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
 }
 
 @font-face {
@@ -498,20 +512,6 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
   font-weight: 600;
 }
@@ -519,8 +519,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 body {
@@ -1818,20 +1818,38 @@ textarea {
   font-size: 0.8854166667vw;
   font-style: normal;
   font-weight: 500;
-  text-decoration-line: underline;
   margin-bottom: 1.0416666667vw;
+}
+
+.main_services__list li a {
+  color: var(--dop-white, #FFF);
+  font-size: 0.8854166667vw;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  padding: 2px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.main_services__list li a:hover {
+  border-color: #fff;
 }
 
 .main_services__more {
   margin-top: auto;
   padding: 0.46875vw 0;
-  border-bottom: 1px solid var(--dop-white, #FFF);
+  border-bottom: 1px solid transparent;
   text-decoration: none;
   display: inline-block;
   color: var(--dop-white, #FFF);
   font-size: 0.8333333333vw;
   font-style: normal;
   font-weight: 600;
+}
+
+.main_services__more:hover {
+  border-color: #fff;
 }
 
 .main_services__flag {
@@ -7053,6 +7071,10 @@ form .wpcf7-spinner {
 
   .main_services__list {
     padding-bottom: 30px;
+  }
+
+  .main_services__list li a {
+    font-size: 15px;
   }
 
   .main_services__list li {
