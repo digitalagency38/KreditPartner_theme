@@ -309,6 +309,12 @@
         &:hover {
             border-color: #fff;
         }
+        &.no_link {
+            cursor: auto;
+            &:hover {
+                border-color: transparent;
+            }
+        }
     }
     &__link {
         font-size: 0;

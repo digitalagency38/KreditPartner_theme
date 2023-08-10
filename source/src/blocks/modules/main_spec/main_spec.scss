@@ -40,7 +40,7 @@
         padding-right: vw(40);
         position: relative;
         padding: vw(8) 0;
-        border-bottom: 1px solid var(--main-blu, #224875);
+        border-bottom: 1px solid #224875;
         @media all and (max-width: 1023px) {
             max-width: 190px;
             width: 100%;
@@ -63,6 +63,9 @@
                 height: 20px;
                 margin-top: -10px;
             }
+        }
+        &:hover {
+            border-color: transparent;
         }
     }
     &__blocks {
@@ -192,6 +195,9 @@
         @media all and (max-width: 1023px) {
             font-size: 16px;
             padding: 9px 0;
+        }
+        &:hover {
+            border-color: transparent !important;
         }
     }
     .glide {

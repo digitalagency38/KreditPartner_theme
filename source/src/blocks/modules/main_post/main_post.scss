@@ -39,7 +39,7 @@
         padding-right: vw(40);
         position: relative;
         padding: vw(8) 0;
-        border-bottom: 1px solid var(--main-blu, #224875);
+        border-bottom: 1px solid #224875;
         @media all and (max-width: 1023px) {
             max-width: 140px;
             width: 100%;
@@ -64,6 +64,7 @@
             }
         }
         &:hover {
+            border-color: transparent;
             .main_news__date, .main_news__tit {
                 color: #fff;
             }
@@ -99,7 +100,7 @@
             margin-right: 0;
         }
         @media all and (max-width: 768px) {
-            max-width: 260px !important;
+            width: 245px !important;
         }
         &:hover {
             background: #0E3461;

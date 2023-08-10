@@ -207,6 +207,9 @@
                         font-size: 14px;
                         margin-bottom: 0;
                     }
+                    &.isActive {
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -241,13 +244,15 @@
     }
     .submenu li:not(.isActive) {
     position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
+    bottom: -100%;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
     }
 
     .submenu li.isActive {
-        display: block;
+        opacity: 1;
+        visibility: visible;
         pointer-events: none;
         a {
             padding-right: 40px;
@@ -274,7 +279,9 @@
         &.isShow {
             li {
                 position: relative;
-                display: block !important;
+                opacity: 1;
+                bottom: unset;
+                visibility: visible;
             }
         }
     }
