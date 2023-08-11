@@ -5,7 +5,7 @@
     right: 0;
     bottom: 0;
     text-align: center;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(34, 72, 117, .9);
     z-index: 200;
     opacity: 0;
     visibility: hidden;
@@ -24,8 +24,51 @@
         display: inline-block;
         vertical-align: middle;
         width: 100%;
-        max-width: 320px;
-        padding: vw(20);
+        max-width: 680px;
+        border-radius: 20px;
+        padding: 60px 40px;
         background: #fff;
+        position: relative;
+        &.isSent {
+            .wpcf7 {
+                display: none;
+            }
+            .modal__sent {
+                display: block;
+            }
+        }
+    }
+    &__sent {
+        display: none;
+        .header__burger--tel {
+            margin-top: vw(170);
+            text-align: left;
+            text-transform: none;
+            @media all and (max-width: 1023px) {
+                margin-top: 30px;
+                margin-bottom: 20px;
+                font-size: 13px;
+            }
+        }
+        .header__burger--socs a {
+            width: vw(50);
+            height: vw(50);
+            @media all and (max-width: 1023px) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    &__closer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.71783 0.723332C1.01072 0.430439 1.48727 0.428754 1.78223 0.719568L19.5845 18.2718C19.8794 18.5626 19.8811 19.0358 19.5882 19.3287C19.2953 19.6216 18.8188 19.6233 18.5238 19.3324L0.721567 1.78023C0.42661 1.48941 0.424937 1.01623 0.71783 0.723332Z' fill='%23224875'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.5869 0.723332C19.294 0.430439 18.8174 0.428754 18.5225 0.719568L0.720215 18.2718C0.425257 18.5626 0.423585 19.0358 0.716478 19.3287C1.00937 19.6216 1.48592 19.6233 1.78088 19.3324L19.5831 1.78023C19.8781 1.48941 19.8798 1.01623 19.5869 0.723332Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+    .serv_form__tit, .serv_form__subtit, .serv_form__politic {
+        text-align: left;
     }
 }

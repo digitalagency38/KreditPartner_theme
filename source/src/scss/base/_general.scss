@@ -90,8 +90,8 @@ textarea {
         background: var(--dop-lite-grey, #fff);
     }
     .serv_form {
-        .serv_form__r-side form {
-            background: #F9F9F9;
+        .serv_form__r-side form, .serv_form__sent {
+            background: #F9F9F9 !important;
         }
     }
     form input[type=text], form input[type=tel] {

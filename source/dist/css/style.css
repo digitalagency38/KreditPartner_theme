@@ -470,13 +470,6 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
   font-weight: 700;
 }
@@ -498,13 +491,6 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
   src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
   font-weight: 400;
 }
@@ -521,6 +507,20 @@
   font-display: swap;
   src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
   font-weight: 100;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
+  font-weight: 900;
 }
 
 body {
@@ -617,8 +617,9 @@ textarea {
   background: var(--dop-lite-grey, #fff);
 }
 
-.block_white .serv_form .serv_form__r-side form {
-  background: #F9F9F9;
+.block_white .serv_form .serv_form__r-side form,
+.block_white .serv_form .serv_form__sent {
+  background: #F9F9F9 !important;
 }
 
 .block_white form input[type=text],
@@ -1462,6 +1463,7 @@ textarea {
   font-size: 0.8333333333vw;
   font-style: normal;
   font-weight: 500;
+  cursor: pointer;
   border-radius: 10px;
   background: var(--dop-white, #FFF);
   margin-right: 2.0833333333vw;
@@ -4296,6 +4298,35 @@ textarea {
   background: var(--dop-white, #FFF);
 }
 
+.serv_form__r-side.isSent .wpcf7 {
+  display: none;
+}
+
+.serv_form__r-side.isSent .serv_form__sent {
+  display: block;
+  height: 100%;
+  max-width: 27.9166666667vw;
+  width: 100%;
+  padding: 3.125vw 2.0833333333vw;
+  border-radius: 20px;
+  background: var(--dop-white, #FFF);
+}
+
+.serv_form__sent {
+  display: none;
+}
+
+.serv_form__sent .header__burger--tel {
+  margin-top: 8.8541666667vw;
+  text-align: left;
+  text-transform: none;
+}
+
+.serv_form__sent .header__burger--socs a {
+  width: 2.6041666667vw;
+  height: 2.6041666667vw;
+}
+
 .serv_form__tit {
   margin-bottom: 1.5625vw;
   color: var(--main-green, #7CC049);
@@ -6406,7 +6437,7 @@ form .wpcf7-spinner {
   right: 0;
   bottom: 0;
   text-align: center;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(34, 72, 117, 0.9);
   z-index: 200;
   opacity: 0;
   visibility: hidden;
@@ -6429,9 +6460,50 @@ form .wpcf7-spinner {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  max-width: 320px;
-  padding: 1.0416666667vw;
+  max-width: 680px;
+  border-radius: 20px;
+  padding: 60px 40px;
   background: #fff;
+  position: relative;
+}
+
+.modal__in.isSent .wpcf7 {
+  display: none;
+}
+
+.modal__in.isSent .modal__sent {
+  display: block;
+}
+
+.modal__sent {
+  display: none;
+}
+
+.modal__sent .header__burger--tel {
+  margin-top: 8.8541666667vw;
+  text-align: left;
+  text-transform: none;
+}
+
+.modal__sent .header__burger--socs a {
+  width: 2.6041666667vw;
+  height: 2.6041666667vw;
+}
+
+.modal__closer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.71783 0.723332C1.01072 0.430439 1.48727 0.428754 1.78223 0.719568L19.5845 18.2718C19.8794 18.5626 19.8811 19.0358 19.5882 19.3287C19.2953 19.6216 18.8188 19.6233 18.5238 19.3324L0.721567 1.78023C0.42661 1.48941 0.424937 1.01623 0.71783 0.723332Z' fill='%23224875'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.5869 0.723332C19.294 0.430439 18.8174 0.428754 18.5225 0.719568L0.720215 18.2718C0.425257 18.5626 0.423585 19.0358 0.716478 19.3287C1.00937 19.6216 1.48592 19.6233 1.78088 19.3324L19.5831 1.78023C19.8781 1.48941 19.8798 1.01623 19.5869 0.723332Z' fill='%23224875'/%3E%3C/svg%3E%0A") 50%/100% no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.modal .serv_form__tit,
+.modal .serv_form__subtit,
+.modal .serv_form__politic {
+  text-align: left;
 }
 
 @media (min-width: 640px) {
@@ -8364,6 +8436,24 @@ form .wpcf7-spinner {
     padding: 30px 20px;
   }
 
+  .serv_form__r-side.isSent .serv_form__sent {
+    max-width: 536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+  }
+
+  .serv_form__sent .header__burger--tel {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .serv_form__sent .header__burger--socs a {
+    width: 50px;
+    height: 50px;
+  }
+
   .serv_form__tit {
     font-size: 20px;
     margin-bottom: 30px;
@@ -9564,6 +9654,17 @@ form .wpcf7-spinner {
   }
 
   .footer__socs a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal__sent .header__burger--tel {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .modal__sent .header__burger--socs a {
     width: 50px;
     height: 50px;
   }

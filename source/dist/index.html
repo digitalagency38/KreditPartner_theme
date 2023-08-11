@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="format-detection" content="telephone=no" />
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230811014924">
+    <link rel="stylesheet" href="css/style.css?_v=20230811113836">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -278,7 +278,7 @@
                                 <li>Программы с возможностью пополнения</li>
                             </ul>
                             <div class="first_block__buttons">
-                                <a href="#" class="first_block__btn first_block__btn--big">Оставить заявку</a>
+                                <div class="first_block__btn first_block__btn--big" data-modal-id="1">Оставить заявку</div>
                                 <a href="#" class="first_block__btn first_block__btn--small">Подробнее</a>
                             </div>
                         </div>
@@ -313,7 +313,7 @@
                                 <li>Программы с возможностью пополнения</li>
                             </ul>
                             <div class="first_block__buttons">
-                                <a href="#" class="first_block__btn first_block__btn--big">Оставить заявку</a>
+                                <div class="first_block__btn first_block__btn--big" data-modal-id="1">Оставить заявку</div>
                                 <a href="#" class="first_block__btn first_block__btn--small">Подробнее</a>
                             </div>
                         </div>
@@ -878,19 +878,13 @@
         <div class="modal" data-modal="1">
     <div class="modal__in">
         <div class="modal__closer"></div>
-        modal 1
-    </div>
-</div>
-
-<div class="modal" data-modal="2">
-    <div class="modal__in">
-        <div class="modal__closer"></div>
-        modal 2
+        <div class="serv_form__tit">Узнайте условия<br><span>по займу</span> прямо сейчас</div>
+        <div class="serv_form__subtit">Подойдет для тех, у кого кредитная история плохая или отсутствует</div><div class="text-field text-field_floating">[text* your-name id:names placeholder "Фамилия, Имя, Отчество"]<label class="text-field__label" for="names">Фамилия, Имя, Отчество</label></div><div class="text-field text-field_floating">[tel* your-tel id:tel placeholder "Мобильный телефон"]<label class="text-field__label" for="tel">Мобильный телефон</label></div>[submit "Оставить заявку"]<div class="serv_form__politic">Нажимая на кнопку, я соглашаюсь с условиями<a href="/privacy-policy">политики конфидициальности</a></div>
     </div>
 </div>
     </div>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20230811014924" type="text/javascript"></script>
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20230811014924" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20230811113836" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20230811113836" type="text/javascript"></script>
 	<script type="text/javascript">
         // Группы объектов
     var groups = [
@@ -993,6 +987,6 @@
             myMap.setBounds(myMap.geoObjects.getBounds());
         }
     </script>
-    <script src="js/app.min.js?_v=20230811014924"></script>
+    <script src="js/app.min.js?_v=20230811113836"></script>
 </body>
 </html>

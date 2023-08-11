@@ -136,6 +136,47 @@
                 padding: 30px 20px;
             }
         }
+        &.isSent {
+            .wpcf7 {
+                display: none;
+            }
+            .serv_form__sent {
+                display: block;
+                height: 100%;
+                max-width: vw(536);
+                width: 100%;
+                padding: vw(60) vw(40);
+                border-radius: 20px;
+                background: var(--dop-white, #FFF);
+                @media all and (max-width: 1023px) {
+                    max-width: 536px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 30px 20px;
+                }
+            }
+        }
+    }
+    &__sent {
+        display: none;
+        .header__burger--tel {
+            margin-top: vw(170);
+            text-align: left;
+            text-transform: none;
+            @media all and (max-width: 1023px) {
+                margin-top: 30px;
+                margin-bottom: 20px;
+                font-size: 13px;
+            }
+        }
+        .header__burger--socs a {
+            width: vw(50);
+            height: vw(50);
+            @media all and (max-width: 1023px) {
+                width: 50px;
+                height: 50px;
+            }
+        }
     }
     &__tit {
         margin-bottom: vw(30);
