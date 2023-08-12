@@ -243,6 +243,7 @@
     &__btn {
         display: inline-block;
         text-decoration: none;
+        cursor: pointer;
         &--big {
             padding: vw(22) vw(20);
             color: var(--main-blu, #224875);

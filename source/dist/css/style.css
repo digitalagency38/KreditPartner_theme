@@ -470,8 +470,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
+  font-weight: 900;
 }
 
 @font-face {
@@ -479,6 +479,13 @@
   font-display: swap;
   src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
   font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
+  src: url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 700;
 }
 
 @font-face {
@@ -498,6 +505,13 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
+  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("ttf");
   font-weight: 600;
 }
@@ -507,20 +521,6 @@
   font-display: swap;
   src: url("../fonts/Mont-Thin.woff2") format("woff2"), url("../fonts/Mont-Thin.woff") format("woff"), url("../fonts/Mont-Thin.ttf") format("ttf");
   font-weight: 100;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Mont";
-  font-display: swap;
-  src: url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff"), url("../fonts/Mont-Black.ttf") format("ttf");
-  font-weight: 900;
 }
 
 body {
@@ -1455,6 +1455,7 @@ textarea {
 .first_block__btn {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .first_block__btn--big {
@@ -2826,6 +2827,7 @@ textarea {
   font-style: normal;
   font-weight: 500;
   border-radius: 10px;
+  cursor: pointer;
   background: var(--dop-white, #FFF);
   margin-right: 2.0833333333vw;
 }
@@ -2845,6 +2847,7 @@ textarea {
   color: var(--dop-white, #FFF);
   font-size: 0.8333333333vw;
   font-style: normal;
+  cursor: pointer;
   font-weight: 500;
 }
 
@@ -2887,10 +2890,12 @@ textarea {
 
 .service_page_first .service_page_first__mores .service_page_first__btn--big {
   margin-right: 40px;
+  cursor: pointer;
 }
 
 .service_page_first .service_page_first__mores .service_page_first__btn--small {
   margin-top: 0;
+  cursor: pointer;
 }
 
 .serv_prev__in {
