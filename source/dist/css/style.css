@@ -484,8 +484,8 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
-  font-weight: 800;
+  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
 }
 
 @font-face {
@@ -498,15 +498,15 @@
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-ExtraLight.woff2") format("woff2"), url("../fonts/Mont-ExtraLight.woff") format("woff"), url("../fonts/Mont-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Mont";
   font-display: swap;
-  src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Mont-Heavy.woff2") format("woff2"), url("../fonts/Mont-Heavy.woff") format("woff"), url("../fonts/Mont-Heavy.ttf") format("ttf");
+  font-weight: 800;
 }
 
 @font-face {
@@ -4684,6 +4684,16 @@ form .wpcf7-spinner {
   margin-bottom: 20px;
 }
 
+.serv_money__item:hover {
+  background: #224875;
+}
+
+.serv_money__item:hover .serv_money__number,
+.serv_money__item:hover .serv_money__text,
+.serv_money__item:hover .serv_money__text a {
+  color: #fff;
+}
+
 .serv_money__number {
   margin-bottom: 1.0416666667vw;
   color: var(--main-orange, #F48432);
@@ -4918,6 +4928,19 @@ form .wpcf7-spinner {
   background: var(--dop-white, #FFF);
   box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
   padding: 1.5625vw 1.0416666667vw;
+}
+
+.serv_why__block:hover {
+  background: #224875;
+}
+
+.serv_why__block:hover .serv_why__tit,
+.serv_why__block:hover .serv_why__txt {
+  color: #fff;
+}
+
+.serv_why__block:hover .serv_why__icon img {
+  filter: grayscale(1) brightness(10);
 }
 
 .serv_why__icon {

@@ -35,6 +35,17 @@
         background: var(--dop-white, #FFF);
         box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);
         padding: vw(30) vw(20);
+        &:hover {
+            background: #224875;
+            .serv_why__tit, .serv_why__txt {
+                color: #fff;
+            }
+            .serv_why__icon {
+                img {
+                    filter: grayscale(1) brightness(10);
+                }
+            }
+        }
         @media all and (max-width: 1023px) {
             margin-left: 0;
             margin-right: 0;

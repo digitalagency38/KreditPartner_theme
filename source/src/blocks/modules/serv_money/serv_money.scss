@@ -77,6 +77,12 @@
             padding: 30px 20px;
             margin-bottom: 10px;
         }
+        &:hover {
+            background: #224875;
+            .serv_money__number, .serv_money__text, .serv_money__text a {
+                color: #fff;
+            }
+        }
     }
     &__number {
         margin-bottom: vw(20);
