@@ -8,26 +8,28 @@ const ServZaym = class ServZaym {
             questions.forEach(question => {
               const title = question.querySelector('.serv_zaym__block--top');
               const text = question.querySelector('.serv_zaym__content');
-              title.addEventListener('click', () => {
-                if (text.style.maxHeight) {
-                  text.style.maxHeight = null;
-                  title.classList.toggle('isActive');
-                  text.classList.toggle('isShow');
-                } else {
-                  questions.forEach(q => {
-                    const qText = q.querySelector('.serv_zaym__content');
-                    const qTitle = q.querySelector('.serv_zaym__block--top');
-                    qText.style.maxHeight = null;
-                    qTitle.classList.remove('isActive');
-                    qText.classList.remove('isShow');
-                  });
             
+              title.addEventListener('click', () => {
+                const isActive = title.classList.contains('isActive');
+                const isShow = text.classList.contains('isShow');
+            
+                questions.forEach(q => {
+                  const qText = q.querySelector('.serv_zaym__content');
+                  const qTitle = q.querySelector('.serv_zaym__block--top');
+                  qText.style.maxHeight = null;
+                  qTitle.classList.remove('isActive');
+                  qText.classList.remove('isShow');
+                });
+            
+                if (!isActive && !isShow) {
                   // text.style.maxHeight = (text.scrollHeight + 5) + 'px';
                   title.classList.add('isActive');
                   text.classList.add('isShow');
                 }
               });
             });
+            
+            
         });
     }
   
