@@ -174,11 +174,14 @@
         }
     }
     &__content {
-        display: none;
+        // display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        &.isShow {
+            // display: block;
         padding-top: vw(40);
         padding-bottom: vw(40);
-        &.isShow {
-            display: block;
         }
         @media all and (max-width: 1023px) {
             padding: 20px;
