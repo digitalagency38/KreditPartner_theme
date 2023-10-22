@@ -217,6 +217,7 @@
     &__r-side {
         width: 50%;
         height: auto;
+        pointer-events: none;
         @media all and (max-width: 1023px) {
             min-height: 340px;
             height: 340px;
